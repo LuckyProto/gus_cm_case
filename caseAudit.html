@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>病例审核</title>
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./libs/commonCss/base.css" />
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./libs/themes/default/style.min.css" />
+    <link rel="stylesheet" href="./libs/bootstrap_datepicker/bootstrap-datepicker3.css" />
+    <!--<link rel="stylesheet" href="./css/case_sec.css">-->
+    <link rel="stylesheet" href="./css/case_object.css">
+    <link rel="stylesheet" href="./libs/zyUploader/control/css/zyUpload.css" type="text/css">
+</head>
+<body>
+    <!--上传图片模态框-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="case" id="case">
+        <div class="wrap_lev1">
+            <ul id="case_lev1" class="case_lev1">
+
+            </ul>
+        </div>
+        <div class="wrap_lev2" id="wrap_lev2">
+            <!--既往史-->
+            <div>
+                <div class="left" id="left">
+                    <ul class="beforeCaseTitleUl" id="beforeCaseTitleUl">
+
+                    </ul>
+                </div>
+                <div class="right" id="right">
+                    <div class="beforeCaseUl" id="beforeCase">
+                        <div>
+                            <button id="beforeCaseBtn" style="position: fixed; top: 5%; right: 10%;">确认修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--病症-->
+            <div style="display: none">
+                <div class="left">
+                    <ul class="beforeCaseTitleUl" id="nowCaseTitleUl">
+
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="nowCaseUl" id="nowCase">
+                        <div>
+                            <button id="nowCaseBtn" style="position: fixed; top: 5%; right: 10%;">确认修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--体征-->
+            <div style="display: none">
+                <div class="left">
+                    <ul class="beforeCaseTitleUl" id="physicaSignTitleUl">
+
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="physicaSignUl" id="physicaSign">
+                        <div>
+                            <button id="physicaSignBtn" style="position: fixed; top: 5%; right: 10%;">确认修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--化验-->
+            <div style="display: none">
+                <div class="left">
+                    <ul class="beforeCaseTitleUl" id="laboratoryTitleUl">
+
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="nowCaseUl" id="laboratory">
+                        <div>
+                            <button id="laboratoryBtn" style="position: fixed; top: 5%; right: 10%;">确认修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--辅助检查-->
+            <div style="display: none">
+                <div class="left">
+                    <ul class="beforeCaseTitleUl" id="assistCheckTitleUl">
+
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="nowCaseUl" id="assistCheck">
+                        <div>
+                            <button id="assistCheckBtn" style="position: fixed; top: 5%; right: 10%;">确认修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="./libs/jquery/jquery.min.js"></script>
+    <script src="./libs/qcload/cos-js-sdk-v5.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./libs/bootstrap/bootstrap.min.js"></script>
+    <script src="./libs/commonjs/cm_common.js"></script>
+    <script src="./libs/moment/moment.min.js"></script>
+    <script src="./libs/bootstrap_datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="./libs/bootstrap_datepicker/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script src="./libs/zyUploader/core/zyFile.js"></script>
+    <script src="./libs/zyUploader/control/js/zyUpload.js"></script>
+    <script src="./libs/zyUploader/core/lanrenzhijia.js"></script>
+    <script src="./libs/commonjs/cm_common_createDom.js"></script>
+    <script src="./js/case_sec.js"></script>
+</body>
+</html>

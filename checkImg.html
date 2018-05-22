@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>病例审核</title>
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./libs/commonCss/base.css" />
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./libs/themes/default/style.min.css" />
+    <link rel="stylesheet" href="./libs/bootstrap_datepicker/bootstrap-datepicker3.css" />
+    <!--<link rel="stylesheet" href="./libs/ssi_uploader/ssi-uploader.css">-->
+    <link rel="stylesheet" href="./css/case_sec.css">
+    <link rel="stylesheet" href="./libs/zyUploader/control/css/zyUpload.css" type="text/css">
+    <style>
+        .imgWrap{
+            width: 1200px;
+            margin: 50px auto;
+        }
+
+        .imgWrap .previewPics{
+
+        }
+        .imgWrap .previewPics .previewPicsUl{
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .imgWrap .previewPics .previewPicsUl li{
+            float: left;
+            position: relative;
+        }
+
+        .imgWrap .previewPics .previewPicsUl li button{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            border: 1px solid #000;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            color: red;
+        }
+
+        .imgWrap .previewPics .previewPicsUl li img{
+            width: 100px;
+            height: 80px;
+            border: 5px solid #fff;
+            cursor: pointer;
+        }
+
+        .imgWrap .protoPics{
+            width: 100%;
+            text-align: center;
+        }
+        .imgWrap .protoPics .protoImg{
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="imgWrap" id="imgWrap">
+            <div class="previewPics">
+                <ul class="previewPicsUl" id="previewPicsUl">
+
+                </ul>
+            </div>
+            <div class="protoPics" id="protoPics">
+                <img src="" alt="" id="protoImg" class="protoImg">
+            </div>
+        </div>
+    </div>
+<script src="./libs/jquery/jquery.min.js"></script>
+<script src="./libs/qcload/cos-js-sdk-v5.min.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="./libs/ssi_uploader/ssi-uploader.js"></script>-->
+<script src="./libs/jstree/jstree.min.js"></script>
+<script src="./libs/bootstrap/bootstrap.min.js"></script>
+<script src="./libs/jquery/jquery.validate.min.js"></script>
+<script src="./libs/jquery/messages_zh.js"></script>
+<script src="./libs/mock/mock-min.js"></script>
+<script src="./libs/commonjs/cm_common.js"></script>
+<script src="./libs/moment/moment.min.js"></script>
+<script src="./libs/bootstrap_datepicker/bootstrap-datepicker.min.js"></script>
+<script src="./libs/bootstrap_datepicker/bootstrap-datepicker.zh-CN.min.js"></script>
+<script src="./libs/zyUploader/core/zyFile.js"></script>
+<script src="./libs/zyUploader/control/js/zyUpload.js"></script>
+<!--<script src="./libs/zyUploader/core/lanrenzhijia.js"></script>-->
+    <script>
+        window.onload = function(){
+            var caseObj = {};
+            var emr_main_id = window.localStorage.getItem('emr_main_id');
+            caseObj.emr_main_id = 198;
+            //通过查询字符串获得图片地址
+            var imgs = getQueryStringArgs();
+
+            //通过文档片段创建预览图
+            // var $previewPicsUl = $('#previewPicsUl'),
+            //     $fragment = $('<fragment>');
+            // for(var prop in imgs){
+            //     $li = $('<li>');
+            //     $btn_del = $('<button>').text('X');
+            //     $li.append($btn_del);
+            //     $img = $('<img>').attr({'src': imgs[prop]});
+            //     $li.append($img);
+            //     $fragment.append($li);
+            // }
+            // $previewPicsUl.append($fragment);
+
+            //使用innerHtml创建DOM节点
+            var previewPicsUl = document.getElementById('previewPicsUl'),
+                html = '',
+                prop,
+                imgUrl = '',
+                qcloadUrl = 'http://testimg-1253887111.file.myqcloud.com/';
+
+            for(prop in imgs){
+                if(!imgs[prop]) return;
+                imgUrl = qcloadUrl + imgs[prop];
+                console.log(imgUrl)
+                html += '<li><img src=' + imgUrl + '><button>' + 'x' + '</button></li>';
+            }
+            previewPicsUl.innerHTML = html;
+            
+            //轮播图结构
+            // var idx = 0;
+            // setInterval(function () {
+            //    idx++;
+            //    if(idx >= $('#previewPicsUl').find('img').length){
+            //         idx= 0;
+            //    }
+            //    $('#previewPicsUl').find('li').eq(idx).css({'display': 'block'}).siblings().css({'display': 'none'});
+            // }, 2000)
+            
+            //默认显示第一张
+            $('#protoImg').attr({'src': $('#previewPicsUl').find('img').eq(0).attr('src')});
+
+            //点击显示大图
+            $('#previewPicsUl').delegate('img', 'click', function(){
+                var src = $(this).attr('src');
+                $('#protoImg').attr({'src': src});
+            })
+
+            //点击旋转
+            var rotateY = 0;
+            $('#protoPics').delegate('img', 'click', function(){
+                rotateY +=  90;
+                $(this).css({'transform': 'rotate('+ rotateY +'deg)', 'cursor': 'se-resize'})
+            })
+
+            //删除图片
+            var cos = new COS({
+                SecretId: 'AKIDkqpiYCQu0Qgx2wrJjxzorpcCb9aqpmW5',
+                SecretKey: 'kJgqnZDg9YpvtgSEoDQSJzUow0eCoETk',
+            })
+            $('#previewPicsUl').delegate('button', 'click', function(){
+                if(confirm('确定删除吗?')){
+                    var self = $(this),
+                        src_delete = $(this).siblings().attr('src');
+                        src_del = $(this).siblings().attr('src').substring('44');
+                    cos.deleteObject({
+                        Bucket: 'testimg-1253887111', /* 必须 */
+                        Region: 'ap-beijing-1',    /* 必须 */
+                        Key: src_del                            /* 必须 */
+                    }, function(err, data) {
+                        console.log(err || data);
+                        if(data.statusCode == 204){
+                            alert('删除成功');
+                            self.parent().remove();
+                            var storage = window.sessionStorage;
+                            for(var i = storage.length - 1; i>=0; i--){
+                                var imgObj = {},
+                                    key = storage.key(i),
+                                    valueStr = '',
+                                    valueArr = storage.getItem(key).split(',');
+                                valueArr.forEach(function (value, index, array) {
+                                    if(src_del == value){
+                                        valueArr.splice(index, 1)
+                                        if(valueArr.length == 0){
+                                            window.sessionStorage.removeItem(key);
+                                        }
+                                    }
+                                })
+                                valueStr = valueArr.join(',');
+                                storage.setItem(key, valueStr);
+                                var imgs = {},
+                                    cases = [];
+                                imgs.itemId = key;
+                                imgs.itemValue = valueArr;
+                                cases.push(imgs);
+                                caseObj.items = cases;
+                                $.ajax({
+                                    type: "POST",
+                                    url: "http://172.16.2.131:8089/guservice/comm",
+                                    contentType : "application/json;charset=UTF-8",
+                                    dataType: 'json',
+                                    data: JSON.stringify({
+                                        methodName: "sp_cm_emr_value_update",
+                                        param: JSON.stringify(caseObj)
+                                    }),
+                                    success: function(data){
+                                        console.log(data)
+                                    }
+                                })
+                            }
+                        }
+                    });
+                }else{
+                    return;
+                }
+            })
+        }
+    </script>
+</body>
+</html>
