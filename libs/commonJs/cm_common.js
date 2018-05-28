@@ -163,24 +163,16 @@ function getQueryStringArgs() {
 //病例审核数组去重,适合上传图片和checkbox
 function unique(array){
     array.sort(compare);
-    var re = [array[0]];
-    var checkVal = [];
-    for(var i = 1; i < array.length; i++){
+    var re = [array[0]],
+        len = array.length;
+    for(var i = 1; i < len; i++){
         if(re[re.length-1].itemId !== array[i].itemId){
             re.push(array[i]);
         }else{
-            //适合图片的去重和checkbox的去重
-            if(re[re.length-1].itemValue instanceof Array){
-                re[re.length-1].itemValue = re[re.length-1].itemValue.concat(array[i].itemValue);
-                var imgs = re[re.length-1].itemValue.sort();
-                var unique_imgs = [imgs[0]];
-                for(var j = 1; j < imgs.length; j++){
-                    if(unique_imgs[unique_imgs.length - 1] !== imgs[j]){
-                        unique_imgs.push(imgs[j]);
-                    }
-                }
-                re[re.length-1].itemValue = unique_imgs;
-            }
+            var checkVal = [];
+            checkVal.push(re[re.length-1].itemValue);
+            checkVal.push(array[i].itemValue);
+            re[re.length-1].itemValue = checkVal.join(',');
         }
     }
     return re;

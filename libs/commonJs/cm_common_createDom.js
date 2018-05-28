@@ -1,3 +1,53 @@
+//表单序列化函数,返回数组
+function serialize(form){
+    var item = {},
+        items_form = [],
+        field = null,
+        i,
+        len,
+        m,
+        optLen,
+        options,   //option元素的集合
+        optValue;
+    for(i = 0, len = form.elements.length; i < len; i++){
+        item.itemValue = [];
+        field = form.elements[i];
+        switch (field.type){
+            case "select-one":
+            case "select-multiple":
+                options = field.options;
+                for(m = 0; m < options.length; m++){
+                    if(options[m].selected){
+                        if(options[m].hasAttribute('itemid') && options[m].hasAttribute('value')){
+                            itemid = options[m].getAttribute('itemid');
+                            value = options[m].value;
+                            item.itemId = itemid;
+                            item.itemValue = value;
+                            items_form.push(item);
+                        }
+                    }
+                }
+                break;
+            case undefined:    //字段集
+            case 'file':       //文件输入
+            case 'submit':     //提交按钮
+            case 'reset':      //重置按钮
+            case 'button':     //自定义按钮
+                break;
+            case 'radio':
+            case 'checkbox':
+                if(!field.checked){
+                    break;
+                }
+            default:
+                if(field.value) {
+                    items_form.push({'itemId': field.getAttribute('itemid'), 'itemValue': field.value});
+                }
+                break;
+        }
+    }
+    return items_form;
+}
 
 //创建每个项目标题
 function createTitle(container, dictionary){
@@ -87,12 +137,12 @@ inputRadiosForm.prototype.init = function(container, dictionary){
         $p = $('<p>'),
         domStr = '';
     dictionary.options.forEach(function (value, index4, array3) {
-        domStr += '<label><input type="radio" itemId='+ dictionary.itemId +' optionid='+ value.optionId + ' name='+ dictionary.itemId +'>'+ value.optionName +'</label>';
+        domStr += '<label><input type="radio" itemId='+ dictionary.itemId +' value='+ value.optionId + ' name='+ dictionary.itemId +'>'+ value.optionName +'</label>';
     })
     this.$dom = $(domStr);
     this.$inputs = this.$dom.find('input');
     this.$inputs.each(function(){
-        if($(this).attr("optionid") == dictionary.itemValue){
+        if($(this).val() == dictionary.itemValue){
             $(this).attr({'checked': 'checked'});
         }
     })
@@ -112,16 +162,22 @@ inputCheckboxForm.prototype.init = function (container, dictionary) {
         domStr = '';
 
     dictionary.options.forEach(function(value, index, array){
-        domStr += '<label><input type="checkbox" itemId='+ dictionary.itemId +' optionid='+ value.optionId + ' name='+ dictionary.itemId +'>'+ value.optionName +'</label>';
+        domStr += '<label><input type="checkbox" name='+ dictionary.itemId +' itemId='+ dictionary.itemId +' value='+ value.optionId + ' >'+ value.optionName +'</label>';
     })
 
     this.$dom = $(domStr);
     $inputs = this.$dom.find('input');
     var self = this;
     if(dictionary.itemValue){
-        dictionary.itemValue.forEach(function (value, index, array) {
+        var itemValue = [];
+        if((typeof dictionary.itemValue) == 'string'){
+            itemValue.push(dictionary.itemValue);
+        }else{
+            itemValue = dictionary.itemValue
+        }
+        itemValue.forEach(function (value, index, array) {
             $inputs.each(function(){
-                if($(this).attr("optionid") == value){
+                if($(this).val() == value){
                     $(this).attr({'checked': 'checked'});
                 }
             })
@@ -139,7 +195,6 @@ function inputRadioForm(container, dictionary){
     this.init(container, dictionary);
 }
 inputRadioForm.prototype.init = function(container, dictionary){
-    console.log(dictionary)
     var domStr = [
         '<form>',
         '	<label><input type="radio">'+ dictionary.itemName +'</label>',
@@ -154,4 +209,90 @@ inputRadioForm.prototype.init = function(container, dictionary){
 function selectOptionsForm(container, dictionary){
     this.container = container;
     this.init(this.container, dictionary)
+}
+
+//创建时间选择器表单
+function InputTimeForm(container, dictionary){
+    this.container = container;
+    this.init(this.container, dictionary);
+}
+InputTimeForm.prototype.init = function(container, dictionary) {
+    var itemValue = dictionary.itemValue ? dictionary.itemValue : '';
+    var domStr = [
+        "<form>",
+        "	<p><label><input type='text' value='"+ itemValue +"' itemid='"+ dictionary.itemId +"'></label></p>",
+        "</form>"
+    ].join("");
+
+    this.$dom = $(domStr);
+    this.$dom.find('input').addClass('datepicker');
+    this.$dom.appendTo(container);
+}
+
+//下拉选择
+function SelectForm(container, dictionary){
+    this.container = container;
+    this.init(this.container, dictionary);
+}
+SelectForm.prototype.init = function(container, dictionary) {
+    var domStr = [
+        '<form>',
+        '	<select itemid="'+ dictionary.itemId +'" type="select-one"><option value="请选择">请选择</option></select>',
+        '</form>'
+    ].join("");
+    this.$dom = $(domStr);
+    this.$select = this.$dom.find('select');
+
+    //option选项
+    var optionStr = '';
+    dictionary.options.forEach(function (value, index, array) {
+        optionStr += '<option  itemid="'+ dictionary.itemId +'" value="'+ value.optionId +'">' + value.optionName + '</option>'
+    })
+    this.$optionStr = $(optionStr);
+
+
+    this.$select.append(this.$optionStr);
+    this.$select.val(dictionary.itemValue);
+    this.$dom.appendTo(container);
+}
+
+//itemTypeId=6的情况，适用于按钮被选中，输入框显示默认值，未被选中，不显示值
+function itemType_six(container, dictionary) {
+    this.isChecked = false;
+    this.container = container;
+    this.dictionary = dictionary;
+    this.displayStartValue = this.dictionary.displayStartValue;
+    this.init(this.container, this.dictionary);
+    this.bindEvent();
+}
+itemType_six.prototype.init = function (container, dictionary) {
+    var itemValue = dictionary.itemValue ? dictionary.itemValue : '';
+    var domStr = [
+        '<p><label><input type="checkbox">'+ dictionary.itemName+'</label></p>',
+        '<form>',
+        '	<p>',
+        '		<input type="text" value="'+ itemValue+'" itemid="'+ dictionary.itemId+'">',
+        '		<span>'+ dictionary.itemUnit+'</span>',
+        '	</p>',
+        '</form>'
+    ].join("");
+
+    this.$dom = $(domStr);
+    this.$label = this.$dom.find('label');
+    this.$checkbox_input = this.$dom.find('input[type="checkbox"]');
+    this.$text_input = this.$dom.find('input[type="text"]');
+    if(itemValue){
+        this.$checkbox_input.attr({"checked": "checked"});
+    }
+    this.$dom.appendTo(container);
+}
+itemType_six.prototype.bindEvent = function () {
+    var self = this;
+    self.$label.click(function () {
+        if(self.$checkbox_input.attr("checked")){
+            self.$text_input.val("");
+        }else{
+            self.$text_input.val(self.displayStartValue);
+        }
+    })
 }
