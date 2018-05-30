@@ -49,6 +49,18 @@ function serialize(form){
     return items_form;
 }
 
+//创建dom
+function domCreate(container, dom){
+    this.dom = dom;
+    this.container = container;
+    this.init(this.container, this.dom);
+}
+domCreate.prototype.init = function (container, dom) {
+    var domStr = ['<li></li>'].join("");
+    this.$dom = $(domStr);
+    this.$dom.appendTo(container);
+}
+
 //创建每个项目标题
 function createTitle(container, dictionary){
     this.container = container;
@@ -168,14 +180,14 @@ inputCheckboxForm.prototype.init = function (container, dictionary) {
     this.$dom = $(domStr);
     $inputs = this.$dom.find('input');
     var self = this;
-    if(dictionary.itemValue){
-        var itemValue = [];
-        if((typeof dictionary.itemValue) == 'string'){
-            itemValue.push(dictionary.itemValue);
+    if(dictionary.itemValues){
+        var itemValues = [];
+        if((typeof dictionary.itemValues) == 'string'){
+            itemValues.push(dictionary.itemValues);
         }else{
-            itemValue = dictionary.itemValue
+            itemValues = dictionary.itemValues
         }
-        itemValue.forEach(function (value, index, array) {
+        itemValues.forEach(function (value, index, array) {
             $inputs.each(function(){
                 if($(this).val() == value){
                     $(this).attr({'checked': 'checked'});
@@ -211,7 +223,7 @@ function selectOptionsForm(container, dictionary){
     this.init(this.container, dictionary)
 }
 
-//创建时间选择器表单
+//创建时间选择器表单,依赖bootstrap-datepicker库
 function InputTimeForm(container, dictionary){
     this.container = container;
     this.init(this.container, dictionary);
@@ -226,6 +238,8 @@ InputTimeForm.prototype.init = function(container, dictionary) {
 
     this.$dom = $(domStr);
     this.$dom.find('input').addClass('datepicker');
+    //日历初始化
+    $('.datepicker').datepicker({language: 'zh-CN'});
     this.$dom.appendTo(container);
 }
 
@@ -294,5 +308,62 @@ itemType_six.prototype.bindEvent = function () {
         }else{
             self.$text_input.val(self.displayStartValue);
         }
+    })
+}
+
+//上传图片类
+function ImgUpload(container, dictionary) {
+    this.container = container;
+    this.dictionary = dictionary;
+    this.init(this.container, this.dictionary);
+    this.bindEvent();
+}
+ImgUpload.prototype.init = function (container, dictionary) {
+    var domStr = [
+        '<div>',
+        '<p><a href="javascript: void(0)" itemId="'+ dictionary.itemId+'">查看大图</a><button class="btn_imgUpload" itemId="'+ dictionary.itemId +'">添加图片</button></p>',
+        '<div>',
+        '	<ul>',
+        '	</ul>',
+        '</div>',
+        '</div>'
+    ].join("");
+    var liStr = '',
+        qcloadUrl = 'http://testimg-1253887111.file.myqcloud.com/';
+    dictionary.itemValues.forEach(function (value, index, array) {
+        liStr += '<li><img src="'+ qcloadUrl +''+ value +'"></li>';
+    })
+
+    this.$dom = $(domStr);
+    this.$dom.addClass("imgUpload");
+    this.$a = this.$dom.find('a');
+    this.$btn = this.$dom.find('button');
+    this.$liStr = $(liStr);
+    var idx = 0;
+    //图片显示与隐藏
+    setInterval(function () {
+        if(idx >= $('img').length){
+            idx = 0;
+        }
+        $('img').eq(idx).parent().css({'border-bottom': '1px solid #000'}).fadeIn().siblings().fadeOut();
+        idx++;
+    }, 2000)
+
+    this.$ul_imgWrap = this.$dom.find('ul');
+    this.$liStr.appendTo(this.$ul_imgWrap);
+    this.$dom.appendTo(container);
+}
+
+ImgUpload.prototype.bindEvent = function (container, dictionary) {
+    var self = this;
+    //跳转页面
+    this.$a.click(function () {
+        var itemId = self.$a.attr('itemId');
+        window.open('checkImg.html?itemId=' + itemId);
+    })
+
+    //显示模态框
+    this.$btn.click(function () {
+        window.itemId_btn_imgUpload = $(this).attr('itemid');
     })
 }

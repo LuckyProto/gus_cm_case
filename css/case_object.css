@@ -42,9 +42,6 @@ label{
     border-left: 1px solid #000;
 }
 
-
-
-
 /*lev2菜单*/
 .case .wrap_lev2{
     width: 98%;
@@ -101,9 +98,9 @@ label{
 }
 
 .case .wrap_lev2 .left .beforeCaseTitleUl li p{
-    float: right;
-    padding-left: 4%;
-    width: 100%;
+    /*float: right;*/
+    /*padding-left: 4%;*/
+    /*width: 100%;*/
 }
 
 .case .wrap_lev2 .left .beforeCaseTitleUl li p input{
@@ -130,10 +127,60 @@ label{
     /*height: 700px;*/
     /*border: 1px solid #000;*/
 }
-
-.wrap_lev2 .right .beforeCaseUl ul{
+.wrap_lev2 .right .beforeCaseUl_sec ul {
     display: none;
 }
+
+.wrap_lev2 .right .beforeCaseUl_sec ul{
+    display: none;
+}
+.wrap_lev2 .right .beforeCaseUl_sec li{
+    width: 100%;
+    padding-left: 1%;
+    line-height: 60px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    overflow: hidden;
+}
+.wrap_lev2 .right .beforeCaseUl_sec li>p{
+    width: 63%;
+    float: left;
+}
+.wrap_lev2 .right .beforeCaseUl_sec li>p label{
+    width: 100%;
+}
+.wrap_lev2 .right .beforeCaseUl_sec li>p label input{
+    margin-right: 2%;
+}
+.wrap_lev2 .right .beforeCaseUl_sec li>form{
+    width: 37%;
+    height: 65px;
+    float: right;
+}
+.wrap_lev2 .right .beforeCaseUl_sec li>form p{
+    width: 100%;
+    height: 65px;
+}
+.wrap_lev2 .right .beforeCaseUl_sec li>form p input{
+    margin-top:20px;
+}
+.wrap_lev2 .right .beforeCaseUl_sec li>form p textarea{
+    margin-top:12px;
+}
+.wrap_lev2 .right .beforeCaseUl_sec>ul li:last-child{
+    height: auto;
+    padding-left: 1%;
+    border: 1px solid #000;
+}
+.wrap_lev2 .right .beforeCaseUl_sec li>form p label{
+    margin-right: 4%;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+
+
 
 .wrap_lev2 .right .beforeCaseUl li{
     width: 100%;
@@ -264,6 +311,10 @@ label{
     padding-right: 1%;
     margin-right: 5px;
 }
+.wrap_lev2 .right .nowCaseUl>ul>li form label input.datepicker{
+    padding-right: 1%;
+    margin-top: 0px;
+}
 
 .wrap_lev2 .right .nowCaseUl>ul>li:first-child{
     height: auto;
@@ -272,6 +323,10 @@ label{
 .wrap_lev2 .right .nowCaseUl>ul>li:first-child form{
     float:right;
     height: auto;
+    /*margin-top: 15px;*/
+}
+.wrap_lev2 .right .nowCaseUl>ul>li:first-child form select{
+    margin-top: 15px;
 }
 
 /*辅助检查*/
@@ -286,4 +341,49 @@ label{
 /*日历背景*/
 .table-condensed{
     background: #fff
+}
+
+
+/*显示默认图片轮播图*/
+.imgUpload{
+    width: 100%;
+}
+.imgUpload p{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.imgUpload p a{
+    float: left;
+    width: 100px;
+    height: 54px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background: #ECECEC;
+    text-align: center;
+}
+.imgUpload p button{
+    float: right;
+    width: 100px;
+    height: 54px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background: #ECECEC;
+    text-align: center;
+}
+.imgUpload div{
+
+}
+.imgUpload div ul{
+    position: relative;
+    height: 250px;
+}
+.imgUpload div ul li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.imgUpload div ul li img{
+    width: 100%;
+    height: 250px;
 }

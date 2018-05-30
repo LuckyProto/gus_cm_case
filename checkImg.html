@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>病例审核</title>
     <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./libs/commonCss/base.css" />
+    <link rel="stylesheet" href="libs/commoncss/base.css" />
     <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./libs/themes/default/style.min.css" />
     <link rel="stylesheet" href="./libs/bootstrap_datepicker/bootstrap-datepicker3.css" />
@@ -80,6 +80,7 @@
 <script src="./libs/jquery/messages_zh.js"></script>
 <script src="./libs/mock/mock-min.js"></script>
 <script src="./libs/commonjs/cm_common.js"></script>
+<script src="./libs/commonjs/cm_common_url.js"></script>
 <script src="./libs/moment/moment.min.js"></script>
 <script src="./libs/bootstrap_datepicker/bootstrap-datepicker.min.js"></script>
 <script src="./libs/bootstrap_datepicker/bootstrap-datepicker.zh-CN.min.js"></script>
@@ -88,12 +89,15 @@
 <!--<script src="./libs/zyUploader/core/lanrenzhijia.js"></script>-->
     <script>
         window.onload = function(){
-            var caseObj = {};
-            var emr_main_id = window.localStorage.getItem('emr_main_id');
-            caseObj.emr_main_id = 198;
-            //通过查询字符串获得图片地址
-            var imgs = getQueryStringArgs();
-
+            var emr_main_id = window.localStorage.getItem('emr_main_id'),
+                caseObj = {},
+                imgs = [],
+                queryStringArgs = getQueryStringArgs(),
+                key = queryStringArgs.itemId;
+            //获取emr_main_id
+            caseObj.emr_main_id = emr_main_id;
+            //获得缓存中的图片地址
+            imgs = window.sessionStorage.getItem(key).split(",");
             //通过文档片段创建预览图
             // var $previewPicsUl = $('#previewPicsUl'),
             //     $fragment = $('<fragment>');
@@ -111,13 +115,9 @@
             var previewPicsUl = document.getElementById('previewPicsUl'),
                 html = '',
                 prop,
-                imgUrl = '',
-                qcloadUrl = 'http://testimg-1253887111.file.myqcloud.com/';
-
-            for(prop in imgs){
-                if(!imgs[prop]) return;
-                imgUrl = qcloadUrl + imgs[prop];
-                console.log(imgUrl)
+                imgUrl = '';
+            for(var i = 0; i < imgs.length; i++){
+                imgUrl = qcloadUrl + imgs[i];
                 html += '<li><img src=' + imgUrl + '><button>' + 'x' + '</button></li>';
             }
             previewPicsUl.innerHTML = html;
@@ -191,7 +191,7 @@
                                 caseObj.items = cases;
                                 $.ajax({
                                     type: "POST",
-                                    url: "http://172.16.2.131:8089/guservice/comm",
+                                    url: ajaxUrl + "comm",
                                     contentType : "application/json;charset=UTF-8",
                                     dataType: 'json',
                                     data: JSON.stringify({
