@@ -16,8 +16,8 @@ label{
 }
 /*lev1标题*/
 .case .wrap_lev1{
-    width: 50%;
-    margin: 1% auto;
+    width: 89%;
+    margin: 2% auto;
 }
 
 .case .wrap_lev1 .case_lev1{
@@ -27,7 +27,7 @@ label{
 
 .case .wrap_lev1 .case_lev1 li{
     float: left;
-    width: 20%;
+    width: 100px;
     height: 30px;
     border-right: 1px solid #000;
     border-top: 1px solid #000;

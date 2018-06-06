@@ -61,6 +61,55 @@ domCreate.prototype.init = function (container, dom) {
     this.$dom.appendTo(container);
 }
 
+
+
+//一级菜单
+function LevelOne(container, dictionary){
+    this.dictionary = dictionary;
+    this.container = container;
+    this.init(this.container, this.dictionary);
+    this.bindEvent();
+}
+LevelOne.prototype.init = function (container, dictionary) {
+    var domStr = [
+        '<li>'+ dictionary +'</li>'
+    ].join("");
+    this.$dom = $(domStr);
+    this.$dom.appendTo(container);
+}
+LevelOne.prototype.bindEvent = function () {
+    var self = this;
+    this.$dom.click(function () {
+        var idx = $("#case_lev1>li").index($(this));
+        self.$dom.css({'background': '#5CC9F5', 'color':'#fff'}).siblings().css({'background': '#fff', 'color':'#888'})
+        $("#wrap_lev2>div").eq(idx).css({'display':'block'}).siblings().css({'display': 'none'});
+    });
+}
+
+//二级菜单
+function LevelTwo(container, dictionary) {
+    this.container = container;
+    this.dictionary = dictionary;
+    this.init(this.container, this.dictionary);
+}
+LevelTwo.prototype.init = function (container, dictionary) {
+    var wrapDom = [
+        '<div>',
+        '	<ul></ul>',
+        '</div>'
+    ].join("");
+    var domStr = '';
+    dictionary.childNodes.forEach(function (value, index, array) {
+        domStr += '<li>'+ value.itemName +'</li>';
+    })
+
+    this.wrapDom = $(wrapDom);
+    this.$ul = this.wrapDom.find('ul');
+    this.$dom = $(domStr);
+    this.$dom.appendTo(this.$ul);
+    this.wrapDom.appendTo(container);
+}
+
 //创建每个项目标题
 function createTitle(container, dictionary){
     this.container = container;
