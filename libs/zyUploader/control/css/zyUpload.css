@@ -183,7 +183,7 @@ pre{font-family:'simsun';}
 	/* max-height:135px; */
 }
 .file_progress{
-	display: none;
+	/*display: none;*/
 	margin: 0;
 	position: absolute;
 	bottom:0px;

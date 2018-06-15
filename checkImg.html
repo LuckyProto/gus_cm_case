@@ -89,7 +89,7 @@
 <!--<script src="./libs/zyUploader/core/lanrenzhijia.js"></script>-->
     <script>
         window.onload = function(){
-            var emr_main_id = window.localStorage.getItem('emr_main_id'),
+            var emr_main_id = window.sessionStorage.getItem('emr_main_id'),
                 caseObj = {},
                 imgs = [],
                 queryStringArgs = getQueryStringArgs(),
@@ -97,7 +97,7 @@
             //获取emr_main_id
             caseObj.emr_main_id = emr_main_id;
             //获得缓存中的图片地址
-            imgs = window.sessionStorage.getItem(key).split(",");
+            imgs = window.localStorage.getItem(key).split(",");
             //通过文档片段创建预览图
             // var $previewPicsUl = $('#previewPicsUl'),
             //     $fragment = $('<fragment>');
@@ -159,15 +159,15 @@
                         src_delete = $(this).siblings().attr('src');
                         src_del = $(this).siblings().attr('src').substring('44');
                     cos.deleteObject({
-                        Bucket: 'testimg-1253887111', /* 必须 */
-                        Region: 'ap-beijing-1',    /* 必须 */
+                        Bucket: 'testimg-1253887111',   /* 必须 */
+                        Region: 'ap-beijing-1',         /* 必须 */
                         Key: src_del                            /* 必须 */
                     }, function(err, data) {
                         console.log(err || data);
                         if(data.statusCode == 204){
                             alert('删除成功');
                             self.parent().remove();
-                            var storage = window.sessionStorage;
+                            var storage = window.localStorage;
                             for(var i = storage.length - 1; i>=0; i--){
                                 var imgObj = {},
                                     key = storage.key(i),
@@ -177,31 +177,32 @@
                                     if(src_del == value){
                                         valueArr.splice(index, 1)
                                         if(valueArr.length == 0){
-                                            window.sessionStorage.removeItem(key);
+                                            window.localStorage.removeItem(key);
                                         }
                                     }
                                 })
                                 valueStr = valueArr.join(',');
                                 storage.setItem(key, valueStr);
-                                var imgs = {},
-                                    cases = [];
-                                imgs.itemId = key;
-                                imgs.itemValue = valueArr;
-                                cases.push(imgs);
-                                caseObj.items = cases;
-                                $.ajax({
-                                    type: "POST",
-                                    url: ajaxUrl + "comm",
-                                    contentType : "application/json;charset=UTF-8",
-                                    dataType: 'json',
-                                    data: JSON.stringify({
-                                        methodName: "sp_cm_emr_value_update",
-                                        param: JSON.stringify(caseObj)
-                                    }),
-                                    success: function(data){
-                                        console.log(data)
-                                    }
-                                })
+                                // var imgs = {},
+                                //     cases = [];
+                                // imgs.itemId = key;
+                                // imgs.itemValue = valueArr;
+                                // cases.push(imgs);
+                                // caseObj.items = cases;
+                                // $("#child").val(caseObj)
+                                // $.ajax({
+                                //     type: "POST",
+                                //     url: ajaxUrl + "comm",
+                                //     contentType : "application/json;charset=UTF-8",
+                                //     dataType: 'json',
+                                //     data: JSON.stringify({
+                                //         methodName: "sp_cm_emr_value_update",
+                                //         param: JSON.stringify(caseObj)
+                                //     }),
+                                //     success: function(data){
+                                //         console.log(data)
+                                //     }
+                                // })
                             }
                         }
                     });

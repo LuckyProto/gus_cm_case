@@ -33,6 +33,7 @@
 					onSuccess		 : function(file){},            // 文件上传成功的回调方法
 					onFailure		 : function(file){},            // 文件上传失败的回调方法
 					onComplete		 : function(responseInfo){},    // 上传完成的回调方法
+                    onProgress       : function(file, loaded, total){}
 			};
 			
 			para = $.extend(defaults,options);
@@ -330,6 +331,7 @@
 						// console.info(files);
 					},
 					onProgress: function(file, loaded, total) {
+					    console.log("progress")
 						var eleProgress = $("#uploadProgress_" + file.index), percent = (loaded / total * 100).toFixed(2) + '%';
 						if(eleProgress.is(":hidden")){
 							eleProgress.show();
@@ -403,6 +405,7 @@
 
                         for(var i = 0; i < ZYFILE.funReturnNeedFiles().length; i++){
                             console.log('文件个数', ZYFILE.funReturnNeedFiles().length)
+                            var uploadingFile = ZYFILE.funReturnNeedFiles()[i];
                             // $("#fileSubmit").click();
                             cos.putObject({
                                 Bucket: 'testimg-1253887111',
@@ -410,9 +413,17 @@
                                 Key: ZYFILE.funReturnNeedFiles()[i].name,
                                 StorageClass: 'STANDARD',
                                 Body: ZYFILE.funReturnNeedFiles()[i], // 上传文件对象
-                                onProgress: function(progressData) {
-                                    // console.log(JSON.stringify(progressData));
+                                onProgress: function(uploadingFile, loaded, total) {
+                                    console.log("progress")
+                                    var eleProgress = $("#uploadProgress_" + file.index), percent = (loaded / total * 100).toFixed(2) + '%';
+                                    if(eleProgress.is(":hidden")){
+                                        eleProgress.show();
+                                    }
+                                    eleProgress.css("width",percent);
                                 }
+                                // onProgress: function(progressData) {
+                                //     console.log(JSON.stringify(progressData));
+                                // }
                             }, function(err, data) {
                                 // console.log(err || data);
                                 // console.log(data.Location);
@@ -424,14 +435,14 @@
                                 clearInterval(timer_imgUpload);
                                 alert('上传成功');
                                 var itemId = itemId_btn_imgUpload,
-                                    oldItemVal = window.sessionStorage.getItem(itemId),
+                                    oldItemVal = window.localStorage.getItem(itemId),
                                     itemValue = imgS.join(',');
                                 if(!oldItemVal){
-                                    window.sessionStorage.setItem(itemId, itemValue)
+                                    window.localStorage.setItem(itemId, itemValue)
                                 }else{
                                     oldItemVal = oldItemVal.split(','),
                                     itemValue = oldItemVal.concat(itemValue);
-                                    window.sessionStorage.setItem(itemId, itemValue.join(','));
+                                    window.localStorage.setItem(itemId, itemValue.join(','));
                                 }
                                 for(var j = 0; j < len; j++){
                                     ZYFILE.funReturnNeedFiles().pop();

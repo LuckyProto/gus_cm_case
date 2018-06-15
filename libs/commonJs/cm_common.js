@@ -16,7 +16,6 @@ function cm_autocomplete(url, sourceName, sourceId) {
                     param: JSON.stringify(param)
                 }),
                 success: function (obj) {
-                    console.log(obj);
                     response(obj.data);
                 }
             });
