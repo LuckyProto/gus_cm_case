@@ -22,7 +22,6 @@ function serialize(form){
                             itemid = options[m].getAttribute('itemid');
                             parentId = options[m].getAttribute('parentId');
                             value = options[m].value;
-                            console.log(itemid, parentId, value);
                             item.itemId = itemid;
                             item.parentId = parentId;
                             item.itemValue = value;
@@ -44,7 +43,7 @@ function serialize(form){
                 }
             case 'textarea':
                 if(field.value) {
-                    items_form.push({'itemId': field.getAttribute('itemid'), 'parentId': field.getAttribute('parentId'), 'itemValue': field.value + '$'});
+                    items_form.push({'itemId': field.getAttribute('itemid'), 'parentId': field.getAttribute('parentId'), 'itemValue': field.value});
                 }
                 break;
             default:
@@ -172,6 +171,8 @@ TextareaForm.prototype.init = function(container, dictionary){
     }
     this.$dom.appendTo(container);
 }
+
+
 //itemTypeId==4的情况，创建复选框
 function inputCheckboxForm(container, dictionary){
     this.container = container;
@@ -451,6 +452,306 @@ InputTimeForm.prototype.init = function(container, dictionary) {
     this.$dom.appendTo(container);
 }
 
+
+//主诉
+function EmrInfo(container, dictionary){
+    this.container = container;
+    this.dictionary = dictionary;
+    this.init(this.container, this.dictionary)
+}
+EmrInfo.prototype.init = function (container, dictionary) {
+    var domStr = [
+        '<tr>',
+        '     <td>'+ dictionary.disease_name +'</td>',
+        '     <td>'+ dictionary.is_main_disease +'</td>',
+        '     <td>'+ dictionary.is_diag +'</td>',
+        '</tr>'
+    ].join("");
+    this.$dom = $(domStr);
+    this.$dom.appendTo(container);
+}
+
+
+//其它
+function Other_textarea(container, dictionary) {
+    this.container = container;
+    this.dictionary = dictionary;
+    this.init(this.container, this.dictionary);
+}
+Other_textarea.prototype.init = function (container, dictionary) {
+    var value = '';
+    if(dictionary.event_remark){
+        value = dictionary.event_remark ? dictionary.event_remark : "未填写";
+    }else{
+        value = dictionary.other_content ? dictionary.other_content : "未填写";
+    }
+    var domStr = [
+        '<li  class="caseItemLi">',
+        '	<p class="caseItemP">',
+        '		<span>其它说明</span>',
+        '	</p>',
+        // '   <form  class="caseItemForm">',
+        '       <p>',
+        '		    <textarea itemid='+ dictionary.itemId +' id="other_textarea" type="textarea" emr_main_id="'+ dictionary.emr_main_id+'">'+ value +'</textarea>',
+        '	    </p>',
+        // '   </form>',
+        '</li>'
+    ].join("");
+
+    this.$dom = $(domStr);
+    this.$dom.appendTo(container);
+}
+//建议诊疗方案
+function Treatment(container, dictionary) {
+    this.container = container;
+    this.dictionary = dictionary;
+    this.init(this.container, this.dictionary);
+}
+Treatment.prototype.init = function (container, dictionary) {
+    var treat_content = dictionary.treat_content ? dictionary.treat_content : "未填写";
+    var domStr = [
+        '<li  class="caseItemLi">',
+        '	<p class="caseItemP">',
+        '		<span>其它说明</span>',
+        '	</p>',
+        // '   <form  class="caseItemForm">',
+        '       <p class="textareaWraper">',
+        //'		    <textarea id="treatment_textarea" type="textarea" emr_main_id="'+ dictionary.emr_main_id+'">'+ treat_content +'</textarea>',
+        '	    </p>',
+        // '   </form>',
+        '</li>'
+    ].join("");
+
+    this.$dom = $(domStr);
+    var textareas = '';
+    this.$textareaWraper = this.$dom.find('.textareaWraper');
+    if(dictionary.treat_content instanceof Array){
+        dictionary.treat_content.forEach(function (value, index, array) {
+            textareas += '<textarea class="treatment_textarea" type="textarea" emr_main_id="'+ dictionary.emr_main_id +'">'+ value +'</textarea>'
+        })
+        this.$domTextareas = $(textareas);
+        this.$domTextareas.appendTo(this.$textareaWraper);
+    }else{
+        var textVal = dictionary.treat_content ? dictionary.treat_content : '';
+        var domTextarea = [
+            '<textarea class="treatment_textarea" type="textarea" itemid="'+ dictionary.itemId+'" emr_main_id="'+ dictionary.emr_main_id +'">'+ textVal +'</textarea>'
+        ].join("");
+
+        this.$domTextarea = $(domTextarea);
+        this.$domTextarea.appendTo(this.$textareaWraper);
+    }
+    this.$dom.appendTo(container);
+}
+$('.title').click(function () {
+    $(this).siblings().css({'display': 'block'}).parents('.levelOne').siblings().children('.levelTwo').css({'display': 'none'});
+    $(this).css({'background': '#5CC9F5', 'color':'#fff'}).parents('.levelOne').siblings().children('.title').css({'background': '#fff', 'color':'#888'})
+});
+//其它上传图片类
+function Other_ImgUpload(container, dictionary) {
+    this.container = container;
+    this.dictionary = dictionary;
+    this.init(this.container, this.dictionary);
+    this.bindEvent();
+}
+Other_ImgUpload.prototype.init = function (container, dictionary) {
+    var domStr = [
+        '<li class="eventLi">',
+        '   <p>',
+        '       <a href="javascript: void(0)" itemId="'+ dictionary.itemId+'" >查看大图</a><button class="btn_imgUpload" itemId="'+ dictionary.itemId +'">添加图片</button>',
+        '   </p>',
+        '   <div>',
+        '	    <ul>',
+        '	    </ul>',
+        '   </div>',
+        '</li>'
+    ].join("");
+    var liStr = '',
+        qcloadUrl = 'http://testimg-1253887111.file.myqcloud.com/';
+    if(dictionary.img_url_list && dictionary.img_url_list[0] != null && dictionary.img_url_list[0] != ""){
+        window.localStorage.setItem(dictionary.itemId,  dictionary.img_url_list.join(','));
+        dictionary.img_url_list.forEach(function (value, index, array) {
+            liStr += '<li><img src="'+ qcloadUrl +''+ value +'"></li>';
+        })
+    }
+
+    this.$dom = $(domStr);
+    this.$dom.addClass("imgUpload");
+    this.$a = this.$dom.find('a');
+    this.$btn = this.$dom.find('button');
+    this.$liStr = $(liStr);
+    var idx = 0;
+    //图片显示与隐藏
+    setInterval(function () {
+        if(idx >= $('img').length){
+            idx = 0;
+        }
+        $('img').eq(idx).parent().css({'border-bottom': '1px solid #000'}).fadeIn().siblings().fadeOut();
+        idx++;
+    }, 2000)
+
+    this.$ul_imgWrap = this.$dom.find('ul');
+    this.$liStr.appendTo(this.$ul_imgWrap);
+    this.$dom.appendTo(container);
+}
+
+Other_ImgUpload.prototype.bindEvent = function (container, dictionary) {
+    var self = this;
+    //跳转页面
+    this.$a.click(function () {
+        var itemId = self.$a.attr('itemid');
+        window.open('checkImg.html?itemId=' + itemId);
+        window.sessionStorage.removeItem(itemId);
+    })
+
+    //显示模态框
+    this.$btn.click(function () {
+        console.log("newEvent")
+        window.itemId_btn_imgUpload = $(this).attr('itemId');
+        $("#modal").modal('show');
+    })
+}
+
+
+//重大事件 创建时间选择器表单,依赖bootstrap-datepicker库
+function EventInputTimeForm(container, dictionary){
+    this.container = container;
+    this.init(this.container, dictionary);
+}
+EventInputTimeForm.prototype.init = function(container, dictionary) {
+    var itemValue = dictionary.event_date ? dictionary.event_date : '';
+    var domStr = [
+        '<li class="caseItemLi">',
+        '	<p  class="caseItemP">',
+        '		<span>事件时间</span>',
+        '	</p>',
+        // '   <form  class="caseItemForm">',
+        '	    <p>',
+        '           <label>',
+        '               <input type="text" value="'+ itemValue +'" id='+ dictionary.itemId +' class="eventDatepicker">',
+        '           </label>',
+        '       </p>',
+        // '   </form>',
+        '</li>'
+    ].join("");
+
+    this.$dom = $(domStr);
+    this.$dom.appendTo(container);
+
+    this.$dom.find('input').addClass('datepicker');
+    //日历初始化
+    $('.datepicker').datepicker({language: 'zh-CN'});
+}
+//重大事件说明
+function eventRemark(container, dictionary) {
+    this.container = container;
+    this.dictionary = dictionary;
+    this.init(this.container, this.dictionary);
+}
+eventRemark.prototype.init = function (container, dictionary) {
+    var event_remark = dictionary.event_remark ? dictionary.event_remark : "未填写";
+    var domStr = [
+        '<li  class="caseItemLi">',
+        '	<p class="caseItemP">',
+        '		<span>其它说明</span>',
+        '	</p>',
+        // '   <form  class="caseItemForm">',
+        '       <p class="textareaWraper">',
+        //'		    <textarea id="treatment_textarea" type="textarea" emr_main_id="'+ dictionary.emr_main_id+'">'+ treat_content +'</textarea>',
+        '	    </p>',
+        // '   </form>',
+        '</li>'
+    ].join("");
+
+    this.$dom = $(domStr);
+    var textareas = '';
+    this.$textareaWraper = this.$dom.find('.textareaWraper');
+    if(dictionary.event_remark instanceof Array){
+        dictionary.event_remark.forEach(function (value, index, array) {
+            textareas += '<textarea class="event_textarea" type="textarea" emr_main_id="'+ dictionary.emr_main_id +'">'+ value +'</textarea>'
+        })
+        this.$domTextareas = $(textareas);
+        this.$domTextareas.appendTo(this.$textareaWraper);
+    }else{
+        var textVal = dictionary.event_remark ? dictionary.event_remark : '';
+        var domTextarea = [
+            '<textarea class="event_textarea" type="textarea" itemid="'+ dictionary.itemId+'" emr_main_id="'+ dictionary.emr_main_id +'">'+ textVal +'</textarea>'
+        ].join("");
+
+        this.$domTextarea = $(domTextarea);
+        this.$domTextarea.appendTo(this.$textareaWraper);
+    }
+    this.$dom.appendTo(container);
+}
+
+
+//重大事件下拉选择
+function EventSelectForm(container, dictionary){
+    this.container = container;
+    this.dictionary = dictionary;
+    this.init(this.container, this.dictionary);
+    this.bindEvent();
+}
+EventSelectForm.prototype.init = function(container, dictionary) {
+    var domStr = [
+        '<li class="caseItemLi">',
+        '   <p class="caseItemP">',
+        '		<span>事件类型</span>',
+        '   </p>',
+        '   <form  class="caseItemForm">',
+        '       <label>',
+        '	        <select class="levelOne_select" type="select-one"><option value="0">请选择</option></select>',
+        '       </label>',
+        '       <label>',
+        '	        <select class="levelTwo_select" type="select-one"><option value="0">请选择</option></select>',
+        '       </label>',
+        '   </form>',
+        '</li>'
+    ].join("");
+    this.$dom = $(domStr);
+    this.$levelOne_select = this.$dom.find('.levelOne_select');
+
+    //optionOne选项
+    var levelOne_optionStr = '';
+    dictionary.level_1_option_list.forEach(function (value, index, array) {
+        levelOne_optionStr += '<option value="'+ value.option_id +'" emr_main_id="'+ dictionary.emr_main_id+'">' + value.option_name + '</option>'
+    })
+    this.$levelOne_optionStr = $(levelOne_optionStr);
+    this.$levelOne_select.append(this.$levelOne_optionStr);
+    this.$levelOne_select.val(dictionary.level_1_selected_id);
+    this.$dom.appendTo(container);
+}
+EventSelectForm.prototype.bindEvent = function (container, dictionary) {
+    $('.levelOne_select').change(function () {
+        var self = this;
+        var levelOneSelectObj = {};
+        levelOneSelectObj.id = $(this).val();
+        $.ajax({
+            type: "POST",
+            url: ajaxUrl + "comm",
+            contentType : "application/json;charset=UTF-8",
+            dataType: 'json',
+            data: JSON.stringify({
+                methodName: "sp_cm_emr_event_option_list",
+                param: JSON.stringify(levelOneSelectObj)
+            }),
+            success: function(data){
+                if(data.code == 0){
+                    if(data.data){
+                        var levelTwo_optionStr = '';
+                        data.data.forEach(function (value, index, array) {
+                            levelTwo_optionStr += '<option class="canRemove" value="'+ value.option_id +'">' + value.option_name + '</option>'
+                        })
+                        $levelTwo_optionStr = $(levelTwo_optionStr);
+                        //添加二级选项
+                        $(self).parent().siblings().children().empty(".canRemove");
+                        $(self).parent().siblings().children().append($('<option class="not" value="0">请选择</option>'));
+                        $(self).parent().siblings().children().append($levelTwo_optionStr);
+                    }
+                }
+            }
+        })
+    })
+}
 //创建病例条目
 function createCaseItem(container, dictionary) {
     switch (true){
@@ -461,6 +762,7 @@ function createCaseItem(container, dictionary) {
             new TextareaForm(container, dictionary)
             break;
         case dictionary.itemTypeId == 3:
+            new SelectForm(container, dictionary);
             break;
         case dictionary.itemTypeId == 4:
             new inputCheckboxForm(container, dictionary)

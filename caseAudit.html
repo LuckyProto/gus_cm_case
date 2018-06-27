@@ -27,8 +27,52 @@
         <div class="statusBtn" id="statusBtn">
 
         </div>
-        <ul  id="app" class="app">
+        <ul id="app" class="app">
+            <li class="levelOne">
+                <h3 class="title">主诉</h3>
+                <div class="levelTwo">
+                    <ul class="levelTwoUl">
+                        <li>
+                            <table class="main_disease_table">
+                                <thead>
+                                    <tr>
+                                        <td>主诉疾病</td>
+                                        <td>是否为主疾病</td>
+                                        <td>是否已确诊</td>
+                                    </tr>
+                                </thead>
+                                <tbody id="main_disease">
 
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="levelOne">
+                <h3 class="title">其它</h3>
+                <div class="levelTwo">
+                    <ul class="levelTwoUl" id="other">
+
+                    </ul>
+                </div>
+            </li>
+            <li class="levelOne">
+                <h3 class="title">建议诊疗方案</h3>
+                <div class="levelTwo">
+                    <ul class="levelTwoUl" id="treatment">
+
+                    </ul>
+                </div>
+            </li>
+            <li class="levelOne">
+                <h3 class="title">重大事件</h3>
+                <div class="levelTwo">
+                    <ul class="levelTwoUl" id="majorEvent">
+                        <li class="caseItemLi newEventLi"><button id="newEventBtn">新建重大事件</button></li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </div>
 	<script src="./libs/jquery/jquery.min.js"></script>

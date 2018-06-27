@@ -157,3 +157,25 @@ label{
     width: 100%;
     height: 250px;
 }
+
+/*其它*/
+.main_disease_table tr{
+    width: 100%;
+}
+.main_disease_table td{
+    width: 22%;
+    border: 1px solid #666;
+    text-align: center;
+}
+.eventLi{
+    border-bottom: 1px solid #333;
+    margin-bottom: 22px;
+}
+.newEventLi{
+    border:1px solid #fff !important;
+    margin-bottom: 20px;
+}
+.treatment_textarea:not(:first-child){
+    position: relative;
+    left: 36%;
+}

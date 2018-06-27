@@ -167,7 +167,8 @@ function unique(array){
     for(var i = 1; i < len; i++){
         if(re[re.length-1].itemId !== array[i].itemId){
             re.push(array[i]);
-        }else{
+        }else if(re[re.length-1].parentId == array[i].parentId && re[re.length-1].itemId == array[i].itemId){
+            // console.log(re[re.length-1], array[i])
             var checkVal = [];
             checkVal.push(re[re.length-1].itemValue);
             checkVal.push(array[i].itemValue);

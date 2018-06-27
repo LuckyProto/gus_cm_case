@@ -27,8 +27,15 @@
         .imgWrap .previewPics .previewPicsUl li{
             float: left;
             position: relative;
+            height: 100px;
         }
-
+        .downloadA{
+            position: absolute;
+            left: 20px;
+            top: 75px;
+            color: blue;
+            border: 1px solid orange;olute;
+        }
         .imgWrap .previewPics .previewPicsUl li button{
             position: absolute;
             top: 5px;
@@ -93,7 +100,7 @@
                 caseObj = {},
                 imgs = [],
                 queryStringArgs = getQueryStringArgs(),
-                key = queryStringArgs.itemId;
+                key = queryStringArgs.itemId ? queryStringArgs.itemId : queryStringArgs.emr_main_id;
             //获取emr_main_id
             caseObj.emr_main_id = emr_main_id;
             //获得缓存中的图片地址
@@ -118,7 +125,7 @@
                 imgUrl = '';
             for(var i = 0; i < imgs.length; i++){
                 imgUrl = qcloadUrl + imgs[i];
-                html += '<li><img src=' + imgUrl + '><button>' + 'x' + '</button></li>';
+                html += '<li><img src=' + imgUrl + '><a class="downloadA" href='+ imgUrl +' download>点击下载</a><button>' + 'x' + '</button></li>';
             }
             previewPicsUl.innerHTML = html;
             
