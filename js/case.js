@@ -1,8392 +1,2853 @@
 var data = {
-    "items":[
-        {
-            "level":1,
-            "itemId":1,
-            "advance":0,
-            "options":[
-
-            ],
-            "itemName":"既往史",
-            "itemUnit":null,
-            "lowerRef":null,
-            "parentId":0,
-            "sequence":1,
-            "upperRef":null,
-            "childNodes":[
-                {
-                    "level":2,
-                    "itemId":9,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"现在用什么药物？",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":1,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":307,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"优甲乐",
-                            "itemUnit":"μg/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"优甲乐",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"50.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":317,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"赛增",
-                            "itemUnit":"U/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":3,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"赛增",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"1.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":318,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"金赛增",
-                            "itemUnit":"U/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":4,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"金赛增",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"1.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":319,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"珍怡",
-                            "itemUnit":"U/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":5,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"珍怡",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"1.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":309,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"醋酸泼尼松",
-                            "itemUnit":"mg/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":6,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"醋酸泼尼松",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"2.5000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":306,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"弥凝",
-                            "itemUnit":"mg/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":7,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"弥凝",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"0.1500"
-                        },
-                        {
-                            "level":3,
-                            "itemId":313,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"注射用绒促性素",
-                            "itemUnit":"U/周",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"注射用绒促性素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"2000.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":314,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"注射用尿促性素",
-                            "itemUnit":"U/周",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":9,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"注射用尿促性素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"150.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":315,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"克龄蒙",
-                            "itemUnit":"片/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":10,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"克龄蒙",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"1.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":316,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"芬吗通",
-                            "itemUnit":"片/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":11,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"芬吗通",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"1.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":310,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"氢化可的松",
-                            "itemUnit":"mg/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":12,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"氢化可的松",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"10.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":308,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"雷替斯",
-                            "itemUnit":"μg/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":394,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"雷替斯",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"50.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":311,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"思特珑",
-                            "itemUnit":"mg/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":856,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"思特珑",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"250.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":312,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"安特尔",
-                            "itemUnit":"mg/日",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":857,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":6,
-                            "lowerLimit":0,
-                            "sexControl":"1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"安特尔",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"120.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":320,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"其它",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":10000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"其它",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"现在用什么药物？",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":10,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"过敏史",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":2,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":48,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":64,
-                                    "optionName":"青霉素"
-                                },
-                                {
-                                    "optionId":65,
-                                    "optionName":"磺胺类"
-                                },
-                                {
-                                    "optionId":70,
-                                    "optionName":"其它"
-                                }
-                            ],
-                            "itemName":"药物",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":4,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"药物",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":49,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":66,
-                                    "optionName":"海鲜"
-                                },
-                                {
-                                    "optionId":67,
-                                    "optionName":"坚果"
-                                },
-                                {
-                                    "optionId":70,
-                                    "optionName":"其它"
-                                }
-                            ],
-                            "itemName":"食物",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":4,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"食物",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":50,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":68,
-                                    "optionName":"花粉"
-                                },
-                                {
-                                    "optionId":69,
-                                    "optionName":"尘螨"
-                                },
-                                {
-                                    "optionId":70,
-                                    "optionName":"其它"
-                                }
-                            ],
-                            "itemName":"其他",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":10000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":4,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"其他",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":51,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"其他",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":10000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"其他",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"过敏史",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":339,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"母亲在孕期有无严重孕吐",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":3,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"母亲在孕期有无严重孕吐",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":340,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"母亲在孕期有无偏食",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":4,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"母亲在孕期有无偏食",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":333,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"（女）月经是否规律",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":5,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"（女）月经是否规律",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":334,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"是否生育",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":6,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"是否生育",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":335,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"最后一次生育年龄(女)",
-                    "itemUnit":"岁",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":7,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"最后一次生育年龄(女)",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"30.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":332,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"（女）月经初潮几岁",
-                    "itemUnit":"岁",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":8,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"（女）月经初潮几岁",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"14.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":329,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"（男性）几岁变声",
-                    "itemUnit":"岁",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":9,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"（男性）几岁变声",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"10.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":330,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"（女性）几岁乳房发育",
-                    "itemUnit":"岁",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":10,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"（女性）几岁乳房发育",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"10.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":331,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"几岁开始蹿个",
-                    "itemUnit":"岁",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":11,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"几岁开始蹿个",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"10.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":327,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"出生时体重",
-                    "itemUnit":"KG",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":12,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"出生时体重",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"3.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":328,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"出生时是否难产或窒息",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":13,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"出生时是否难产或窒息",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":326,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"头部外伤史",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":14,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"头部外伤史",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":336,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"最后一次生育年龄(男)",
-                    "itemUnit":"岁",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":15,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"最后一次生育年龄(男)",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"30.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":321,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"高血压病史",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":16,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"高血压病史",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":322,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"高血糖病史",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":17,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"高血糖病史",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":323,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"高血脂病史",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":18,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"高血脂病史",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":324,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"高尿酸病史",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":19,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"高尿酸病史",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":325,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"心脏病史",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":20,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"心脏病史",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":337,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"自然流产史（女）",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":21,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"自然流产史（女）",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":338,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"鞍区病变家族史",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":22,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"鞍区病变家族史",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":341,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"其他",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":10000,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":2,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"其他",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                }
-            ],
-            "itemNameEn":null,
-            "itemTypeId":1,
-            "lowerLimit":0,
-            "sexControl":"0,1",
-            "upperLimit":0,
-            "precautions":null,
-            "itemNameAbbr":null,
-            "itemNameDoctor":"既往史",
-            "ageControlLower":0,
-            "ageControlUpper":1800,
-            "displayStartValue":null
+    "data": {
+        "items": [
+            {
+                "itemId": 1,
+                "sequence": 1,
+                "itemName": "既往史",
+                "level": 1,
+                "childNodes": [
+                    {
+                        "itemId": 11,
+                        "sequence": 1,
+                        "itemName": "既往病史",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 5592,
+                                "sequence": 3,
+                                "itemName": "高血压史",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "63",
+                                "options": [
+                                    {
+                                        "optionId": 62,
+                                        "optionName": "有"
+                                    },
+                                    {
+                                        "optionId": 63,
+                                        "optionName": "无"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 11,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5591,
+                                "sequence": 4,
+                                "itemName": "高脂血症史",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "63",
+                                "options": [
+                                    {
+                                        "optionId": 62,
+                                        "optionName": "有"
+                                    },
+                                    {
+                                        "optionId": 63,
+                                        "optionName": "无"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 11,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 52,
+                                "sequence": 5,
+                                "itemName": "肥胖史",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "62",
+                                "options": [
+                                    {
+                                        "optionId": 62,
+                                        "optionName": "有"
+                                    },
+                                    {
+                                        "optionId": 63,
+                                        "optionName": "无"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 11,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 53,
+                                "sequence": 6,
+                                "itemName": "糖尿病史",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "63",
+                                "options": [
+                                    {
+                                        "optionId": 62,
+                                        "optionName": "有"
+                                    },
+                                    {
+                                        "optionId": 63,
+                                        "optionName": "无"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 11,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5590,
+                                "sequence": 7,
+                                "itemName": "肝炎史",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "63",
+                                "options": [
+                                    {
+                                        "optionId": 62,
+                                        "optionName": "有"
+                                    },
+                                    {
+                                        "optionId": 63,
+                                        "optionName": "无"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 11,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5589,
+                                "sequence": 8,
+                                "itemName": "结核史",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "63",
+                                "options": [
+                                    {
+                                        "optionId": 62,
+                                        "optionName": "有"
+                                    },
+                                    {
+                                        "optionId": 63,
+                                        "optionName": "无"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 11,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5588,
+                                "sequence": 9,
+                                "itemName": "有无冠心病史",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "63",
+                                "options": [
+                                    {
+                                        "optionId": 62,
+                                        "optionName": "有"
+                                    },
+                                    {
+                                        "optionId": 63,
+                                        "optionName": "无"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 11,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5587,
+                                "sequence": 10,
+                                "itemName": "其他病史",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": null,
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 11,
+                                "itemValues": []
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 1,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 10,
+                        "sequence": 2,
+                        "itemName": "过敏史",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 48,
+                                "sequence": 1,
+                                "itemName": "药物",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": null,
+                                "options": [
+                                    {
+                                        "optionId": 64,
+                                        "optionName": "青霉素"
+                                    },
+                                    {
+                                        "optionId": 65,
+                                        "optionName": "磺胺类"
+                                    },
+                                    {
+                                        "optionId": 70,
+                                        "optionName": "其它"
+                                    }
+                                ],
+                                "itemTypeId": 1,
+                                "parentId": 10,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 49,
+                                "sequence": 2,
+                                "itemName": "食物",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [
+                                    {
+                                        "optionId": 66,
+                                        "optionName": "海鲜"
+                                    },
+                                    {
+                                        "optionId": 67,
+                                        "optionName": "坚果"
+                                    },
+                                    {
+                                        "optionId": 70,
+                                        "optionName": "其它"
+                                    }
+                                ],
+                                "itemTypeId": 4,
+                                "parentId": 10,
+                                "itemValues": [
+                                    null
+                                ]
+                            },
+                            {
+                                "itemId": 50,
+                                "sequence": 3,
+                                "itemName": "其他",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [
+                                    {
+                                        "optionId": 68,
+                                        "optionName": "花粉"
+                                    },
+                                    {
+                                        "optionId": 69,
+                                        "optionName": "尘螨"
+                                    },
+                                    {
+                                        "optionId": 70,
+                                        "optionName": "其它"
+                                    }
+                                ],
+                                "itemTypeId": 4,
+                                "parentId": 10,
+                                "itemValues": [
+                                    null
+                                ]
+                            },
+                            {
+                                "itemId": 51,
+                                "sequence": 4,
+                                "itemName": "其他",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": null,
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 10,
+                                "itemValues": []
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 1,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 12,
+                        "sequence": 3,
+                        "itemName": "吸烟史",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": null,
+                        "itemValue": "45",
+                        "options": [
+                            {
+                                "optionId": 44,
+                                "optionName": "是"
+                            },
+                            {
+                                "optionId": 45,
+                                "optionName": "否"
+                            },
+                            {
+                                "optionId": 61,
+                                "optionName": "不知道"
+                            }
+                        ],
+                        "itemTypeId": 7,
+                        "parentId": 1,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 13,
+                        "sequence": 4,
+                        "itemName": "饮酒史",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": null,
+                        "itemValue": "44",
+                        "options": [
+                            {
+                                "optionId": 44,
+                                "optionName": "是"
+                            },
+                            {
+                                "optionId": 45,
+                                "optionName": "否"
+                            },
+                            {
+                                "optionId": 61,
+                                "optionName": "不知道"
+                            }
+                        ],
+                        "itemTypeId": 7,
+                        "parentId": 1,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 5394,
+                        "sequence": 6,
+                        "itemName": "女性是否停经",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": null,
+                        "itemValue": "45",
+                        "options": [
+                            {
+                                "optionId": 44,
+                                "optionName": "是"
+                            },
+                            {
+                                "optionId": 45,
+                                "optionName": "否"
+                            },
+                            {
+                                "optionId": 61,
+                                "optionName": "不知道"
+                            }
+                        ],
+                        "itemTypeId": 7,
+                        "parentId": 1,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 5395,
+                        "sequence": 7,
+                        "itemName": "最近用什么药物？",
+                        "level": 3,
+                        "childNodes": [],
+                        "itemUnit": null,
+                        "itemValue": "某某片，一天三次，一次一片",
+                        "options": [],
+                        "itemTypeId": 2,
+                        "parentId": 1,
+                        "itemValues": []
+                    }
+                ],
+                "itemUnit": null,
+                "itemValue": null,
+                "options": [],
+                "itemTypeId": 1,
+                "parentId": 0,
+                "itemValues": []
+            },
+            {
+                "itemId": 2,
+                "sequence": 2,
+                "itemName": "症状",
+                "level": 1,
+                "childNodes": [
+                    {
+                        "itemId": 5365,
+                        "sequence": 871,
+                        "itemName": "主要问题",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 5372,
+                                "sequence": 871,
+                                "itemName": "您找医生的主要原因是什么？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "心烦，心慌，出汗",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 5365,
+                                "itemValues": []
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 2,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 5366,
+                        "sequence": 873,
+                        "itemName": "其他问题",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 5373,
+                                "sequence": 873,
+                                "itemName": "还有其他什么不舒服？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "吃不下",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 5366,
+                                "itemValues": []
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 2,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 5367,
+                        "sequence": 874,
+                        "itemName": "病情变化",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 5374,
+                                "sequence": 874,
+                                "itemName": "最近病情是否有加重？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "44",
+                                "options": [
+                                    {
+                                        "optionId": 44,
+                                        "optionName": "是"
+                                    },
+                                    {
+                                        "optionId": 45,
+                                        "optionName": "否"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 5367,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5375,
+                                "sequence": 875,
+                                "itemName": "从什么时候开始加重？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "五年前",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 5367,
+                                "itemValues": []
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 2,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 5368,
+                        "sequence": 877,
+                        "itemName": "一般情况",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 5376,
+                                "sequence": 877,
+                                "itemName": "精神状态如何？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "175",
+                                "options": [
+                                    {
+                                        "optionId": 173,
+                                        "optionName": "好"
+                                    },
+                                    {
+                                        "optionId": 174,
+                                        "optionName": "一般"
+                                    },
+                                    {
+                                        "optionId": 175,
+                                        "optionName": "差"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 5368,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5377,
+                                "sequence": 878,
+                                "itemName": "晚上睡眠好吗？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "45",
+                                "options": [
+                                    {
+                                        "optionId": 44,
+                                        "optionName": "是"
+                                    },
+                                    {
+                                        "optionId": 45,
+                                        "optionName": "否"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 5368,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5378,
+                                "sequence": 879,
+                                "itemName": "觉得全身没劲吗？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "44",
+                                "options": [
+                                    {
+                                        "optionId": 44,
+                                        "optionName": "是"
+                                    },
+                                    {
+                                        "optionId": 45,
+                                        "optionName": "否"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 5368,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5379,
+                                "sequence": 880,
+                                "itemName": "吃东西胃口好吗？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "45",
+                                "options": [
+                                    {
+                                        "optionId": 44,
+                                        "optionName": "是"
+                                    },
+                                    {
+                                        "optionId": 45,
+                                        "optionName": "否"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 5368,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5380,
+                                "sequence": 881,
+                                "itemName": "大便是否正常？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "45",
+                                "options": [
+                                    {
+                                        "optionId": 44,
+                                        "optionName": "是"
+                                    },
+                                    {
+                                        "optionId": 45,
+                                        "optionName": "否"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 5368,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5381,
+                                "sequence": 882,
+                                "itemName": "小便是否正常？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "45",
+                                "options": [
+                                    {
+                                        "optionId": 44,
+                                        "optionName": "是"
+                                    },
+                                    {
+                                        "optionId": 45,
+                                        "optionName": "否"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 5368,
+                                "itemValues": []
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 2,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 5369,
+                        "sequence": 883,
+                        "itemName": "诊治经过",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 5382,
+                                "sequence": 883,
+                                "itemName": "是否去医院看过病？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "没有",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 5369,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5383,
+                                "sequence": 884,
+                                "itemName": "是否用过什么药治疗？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "某某片",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 5369,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5384,
+                                "sequence": 885,
+                                "itemName": "治疗是否有效？",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "没有效果",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 5369,
+                                "itemValues": []
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 2,
+                        "itemValues": []
+                    }
+                ],
+                "itemUnit": null,
+                "itemValue": null,
+                "options": [],
+                "itemTypeId": 1,
+                "parentId": 0,
+                "itemValues": []
+            },
+            {
+                "itemId": 3,
+                "sequence": 3,
+                "itemName": "体征",
+                "level": 1,
+                "childNodes": [
+                    {
+                        "itemId": 429,
+                        "sequence": 415,
+                        "itemName": "呼吸",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": "次/分",
+                        "itemValue": "65",
+                        "options": [],
+                        "itemTypeId": 8,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 431,
+                        "sequence": 416,
+                        "itemName": "心率",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": "次/分",
+                        "itemValue": "70",
+                        "options": [],
+                        "itemTypeId": 8,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 438,
+                        "sequence": 417,
+                        "itemName": "血压(高压)",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": "mmHg",
+                        "itemValue": "90",
+                        "options": [],
+                        "itemTypeId": 8,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 427,
+                        "sequence": 418,
+                        "itemName": "血压(低压)",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": "mmHg",
+                        "itemValue": "40",
+                        "options": [],
+                        "itemTypeId": 8,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 428,
+                        "sequence": 419,
+                        "itemName": "体温",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": "摄氏度",
+                        "itemValue": "36",
+                        "options": [],
+                        "itemTypeId": 8,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 148,
+                        "sequence": 420,
+                        "itemName": "身高",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": "cm",
+                        "itemValue": "168",
+                        "options": [],
+                        "itemTypeId": 8,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 149,
+                        "sequence": 421,
+                        "itemName": "体重",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": "kg",
+                        "itemValue": "55",
+                        "options": [],
+                        "itemTypeId": 8,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 150,
+                        "sequence": 422,
+                        "itemName": "体重指数",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": null,
+                        "itemValue": "5",
+                        "options": [],
+                        "itemTypeId": 8,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 151,
+                        "sequence": 423,
+                        "itemName": "腰围",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": "cm",
+                        "itemValue": "100",
+                        "options": [],
+                        "itemTypeId": 8,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 440,
+                        "sequence": 423,
+                        "itemName": "头围",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": "cm",
+                        "itemValue": "50",
+                        "options": [],
+                        "itemTypeId": 8,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 5387,
+                        "sequence": 424,
+                        "itemName": "发育",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": null,
+                        "itemValue": "72",
+                        "options": [
+                            {
+                                "optionId": 72,
+                                "optionName": "正常"
+                            },
+                            {
+                                "optionId": 235,
+                                "optionName": "异常"
+                            }
+                        ],
+                        "itemTypeId": 7,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 5388,
+                        "sequence": 425,
+                        "itemName": "营养",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": null,
+                        "itemValue": "239",
+                        "options": [
+                            {
+                                "optionId": 237,
+                                "optionName": "良好"
+                            },
+                            {
+                                "optionId": 238,
+                                "optionName": "中等"
+                            },
+                            {
+                                "optionId": 239,
+                                "optionName": "不良"
+                            }
+                        ],
+                        "itemTypeId": 7,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 5389,
+                        "sequence": 426,
+                        "itemName": "皮肤、粘膜",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": null,
+                        "itemValue": "72",
+                        "options": [
+                            {
+                                "optionId": 72,
+                                "optionName": "正常"
+                            },
+                            {
+                                "optionId": 235,
+                                "optionName": "异常"
+                            },
+                            {
+                                "optionId": 236,
+                                "optionName": "不详"
+                            }
+                        ],
+                        "itemTypeId": 7,
+                        "parentId": 3,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 5390,
+                        "sequence": 436,
+                        "itemName": "异常描述",
+                        "level": 2,
+                        "childNodes": [],
+                        "itemUnit": null,
+                        "itemValue": "异常描述",
+                        "options": [],
+                        "itemTypeId": 2,
+                        "parentId": 3,
+                        "itemValues": []
+                    }
+                ],
+                "itemUnit": null,
+                "itemValue": null,
+                "options": [],
+                "itemTypeId": 1,
+                "parentId": 0,
+                "itemValues": []
+            },
+            {
+                "itemId": 4,
+                "sequence": 4,
+                "itemName": "化验",
+                "level": 1,
+                "childNodes": [
+                    {
+                        "itemId": 164,
+                        "sequence": 1180,
+                        "itemName": "血常规",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 172,
+                                "sequence": 1190,
+                                "itemName": "白细胞",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "10^9/l",
+                                "itemValue": "1",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 164,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 173,
+                                "sequence": 1191,
+                                "itemName": "中性粒细胞百分比",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 164,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 188,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 164,
+                                "itemValues": [
+                                    "1521516656177_SelfieCity_20161105180726_org.jpg"
+                                ]
+                            },
+                            {
+                                "itemId": 174,
+                                "sequence": 1192,
+                                "itemName": "淋巴细胞百分比",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "3",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 164,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 175,
+                                "sequence": 1193,
+                                "itemName": "红细胞",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "4",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 164,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 178,
+                                "sequence": 1194,
+                                "itemName": "血色素",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "5",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 164,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 179,
+                                "sequence": 1195,
+                                "itemName": "血小板",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "6",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 164,
+                                "itemValues": []
+                            },
+
+                            {
+                                "itemId": 187,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2013-1-21",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 164,
+                                "itemValues": []
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 4,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 2313,
+                        "sequence": 1181,
+                        "itemName": "尿常规",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 3351,
+                                "sequence": 1196,
+                                "itemName": "尿葡萄糖",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "mmol/L",
+                                "itemValue": "1",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2313,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3364,
+                                "sequence": 1197,
+                                "itemName": "尿蛋白(Pro)",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "g/L",
+                                "itemValue": "2",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2313,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5095,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2014-9-1",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 2313,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5159,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 2313,
+                                "itemValues": [
+                                    "1521516673094_SelfieCity_20161105180520_org.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 4,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 2514,
+                        "sequence": 1182,
+                        "itemName": "大便潜血",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 3290,
+                                "sequence": 1198,
+                                "itemName": "大便潜血",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "45",
+                                "options": [
+                                    {
+                                        "optionId": 44,
+                                        "optionName": "是"
+                                    },
+                                    {
+                                        "optionId": 45,
+                                        "optionName": "否"
+                                    },
+                                    {
+                                        "optionId": 61,
+                                        "optionName": "不知道"
+                                    }
+                                ],
+                                "itemTypeId": 7,
+                                "parentId": 2514,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5134,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2014-1-28",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 2514,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5198,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 2514,
+                                "itemValues": [
+                                    "1521516686542_SelfieCity_20161105180442_org.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 4,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 2346,
+                        "sequence": 1183,
+                        "itemName": "血沉",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 3894,
+                                "sequence": 1199,
+                                "itemName": "血沉",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "mm/h",
+                                "itemValue": "3",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2346,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5128,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2015-12-28",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 2346,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5192,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 2346,
+                                "itemValues": [
+                                    "1521516702556_1521516702158719.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 4,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 2336,
+                        "sequence": 1184,
+                        "itemName": "肝功能",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 3147,
+                                "sequence": 1200,
+                                "itemName": "丙氨酸氨基转移酶(ALT)",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "U/L",
+                                "itemValue": "1",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2336,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3305,
+                                "sequence": 1201,
+                                "itemName": "天门冬氨酸氨基转移酶",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "U/L",
+                                "itemValue": "2",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2336,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 4014,
+                                "sequence": 1202,
+                                "itemName": "谷氨酰转肽酶",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "U/L",
+                                "itemValue": "3",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2336,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3715,
+                                "sequence": 1203,
+                                "itemName": "碱性磷酸酶(ALP)",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "U/L",
+                                "itemValue": "4",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2336,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3438,
+                                "sequence": 1204,
+                                "itemName": "总胆红素",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "umol/L",
+                                "itemValue": "5",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2336,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3686,
+                                "sequence": 1205,
+                                "itemName": "直接胆红素",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "umol/L",
+                                "itemValue": "6",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2336,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3658,
+                                "sequence": 1206,
+                                "itemName": "白蛋白",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "g/L",
+                                "itemValue": "7",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2336,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5118,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2016-12-29",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 2336,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5182,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 2336,
+                                "itemValues": [
+                                    "1521516726208_1521516725864965.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 4,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 2343,
+                        "sequence": 1185,
+                        "itemName": "肾功能",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 3346,
+                                "sequence": 1207,
+                                "itemName": "尿素(Urea)",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "mmol/L",
+                                "itemValue": "2",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2343,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3843,
+                                "sequence": 1208,
+                                "itemName": "肌酐",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "umol/L",
+                                "itemValue": "3",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2343,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3394,
+                                "sequence": 1209,
+                                "itemName": "尿酸(UA)",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "umol/L",
+                                "itemValue": "4",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2343,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5125,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2009-1-27",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 2343,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5189,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 2343,
+                                "itemValues": [
+                                    null
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 4,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 2348,
+                        "sequence": 1186,
+                        "itemName": "血电解质",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 3977,
+                                "sequence": 1210,
+                                "itemName": "血钠",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "mmol/L",
+                                "itemValue": "5",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2348,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3994,
+                                "sequence": 1211,
+                                "itemName": "血钾",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "mmol/L",
+                                "itemValue": "6",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2348,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5130,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2013-12-27",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 2348,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5194,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 2348,
+                                "itemValues": [
+                                    "1521516752316_SelfieCity_20161105180442_org.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 4,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 168,
+                        "sequence": 1187,
+                        "itemName": "血脂",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 216,
+                                "sequence": 1212,
+                                "itemName": "甘油三酯",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "5",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 168,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 217,
+                                "sequence": 1213,
+                                "itemName": "总胆固醇",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "4",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 168,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 218,
+                                "sequence": 1214,
+                                "itemName": "低密度脂蛋白胆固醇",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "5",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 168,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 219,
+                                "sequence": 1215,
+                                "itemName": "高密度脂蛋白胆固醇",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "7",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 168,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 223,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2014-11-27",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 168,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 224,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 168,
+                                "itemValues": [
+                                    "1521516767063_SelfieCity_20161105180726_org.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 4,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 2349,
+                        "sequence": 1188,
+                        "itemName": "血糖",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 3740,
+                                "sequence": 1216,
+                                "itemName": "空腹血清葡萄糖",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "mmol/L",
+                                "itemValue": "5",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2349,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 4068,
+                                "sequence": 1217,
+                                "itemName": "餐后2小时血清葡萄糖",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "mmol/L",
+                                "itemValue": "6",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2349,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3769,
+                                "sequence": 1218,
+                                "itemName": "糖化血红蛋白",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "%",
+                                "itemValue": "7",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2349,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5131,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2015-12-28",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 2349,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5195,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 2349,
+                                "itemValues": [
+                                    "1521516781635_SelfieCity_20161105180726_org.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 4,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 2328,
+                        "sequence": 1189,
+                        "itemName": "甲状腺功能",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 3501,
+                                "sequence": 1219,
+                                "itemName": "游离三碘甲腺原氨酸",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "pg/ml",
+                                "itemValue": "8",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2328,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3518,
+                                "sequence": 1220,
+                                "itemName": "游离甲状腺素",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "ng/dl",
+                                "itemValue": "9",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2328,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3120,
+                                "sequence": 1221,
+                                "itemName": "三碘甲腺原氨酸",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "ng/ml",
+                                "itemValue": "4",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2328,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3601,
+                                "sequence": 1222,
+                                "itemName": "甲状腺素",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "ug/dl",
+                                "itemValue": "67",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2328,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 3212,
+                                "sequence": 1223,
+                                "itemName": "促甲状腺素",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": "uIu/ml",
+                                "itemValue": "7",
+                                "options": [],
+                                "itemTypeId": 8,
+                                "parentId": 2328,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5110,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2015-5-1",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 2328,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 5174,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 0,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 2328,
+                                "itemValues": [
+                                    "1521516799174_SelfieCity_20161105180520_org.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 4,
+                        "itemValues": []
+                    }
+                ],
+                "itemUnit": null,
+                "itemValue": null,
+                "options": [],
+                "itemTypeId": 1,
+                "parentId": 0,
+                "itemValues": []
+            },
+            {
+                "itemId": 5,
+                "sequence": 5,
+                "itemName": "辅助检查",
+                "level": 1,
+                "childNodes": [
+                    {
+                        "itemId": 1022,
+                        "sequence": 632,
+                        "itemName": "心电图",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1497,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "294",
+                                "options": [
+                                    {
+                                        "optionId": 294,
+                                        "optionName": "心脏"
+                                    },
+                                    {
+                                        "optionId": 294,
+                                        "optionName": "心脏"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 1022,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1498,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 1022,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1499,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2016-11-24",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 1022,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1500,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 1022,
+                                "itemValues": [
+                                    "1521516824830_1521516824477719.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 1093,
+                        "sequence": 633,
+                        "itemName": "胸部X线片",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1781,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "245",
+                                "options": [
+                                    {
+                                        "optionId": 294,
+                                        "optionName": "心脏"
+                                    },
+                                    {
+                                        "optionId": 295,
+                                        "optionName": "心肺"
+                                    },
+                                    {
+                                        "optionId": 245,
+                                        "optionName": "胸部"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 1093,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1782,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 1093,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1783,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2014-6-29",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 1093,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1784,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 1093,
+                                "itemValues": [
+                                    "1521516844087_SelfieCity_20161105180726_org.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 1107,
+                        "sequence": 634,
+                        "itemName": "超声检查",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1837,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "373",
+                                "options": [
+                                    {
+                                        "optionId": 294,
+                                        "optionName": "心脏"
+                                    },
+                                    {
+                                        "optionId": 373,
+                                        "optionName": "其他部位"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 1107,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1838,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 1107,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1839,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2010-1-27",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 1107,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1840,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 1107,
+                                "itemValues": [
+                                    null
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 1102,
+                        "sequence": 635,
+                        "itemName": "血管彩超",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1817,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "332",
+                                "options": [
+                                    {
+                                        "optionId": 332,
+                                        "optionName": "血管"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 1102,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1818,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 1102,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1819,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2012-12-22",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 1102,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1820,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 1102,
+                                "itemValues": [
+                                    "1521517299693_1521517299050395.jpg",
+                                    "1521517306960_SelfieCity_20161105180442_org.jpg"
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 959,
+                        "sequence": 636,
+                        "itemName": "CT检查",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1245,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "374",
+                                "options": [
+                                    {
+                                        "optionId": 374,
+                                        "optionName": "任何部位"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 959,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1246,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 959,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1247,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2014-7-31",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 959,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1248,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 959,
+                                "itemValues": [
+                                    null
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 1032,
+                        "sequence": 637,
+                        "itemName": "核磁检查",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1537,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "374",
+                                "options": [
+                                    {
+                                        "optionId": 374,
+                                        "optionName": "任何部位"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 1032,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1538,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 1032,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1539,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2014-11-27",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 1032,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1540,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 1032,
+                                "itemValues": [
+                                    null
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 1035,
+                        "sequence": 638,
+                        "itemName": "核素显像",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1549,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "374",
+                                "options": [
+                                    {
+                                        "optionId": 374,
+                                        "optionName": "任何部位"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 1035,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1550,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 1035,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1551,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2016-3-28",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 1035,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1552,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 1035,
+                                "itemValues": [
+                                    null
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 1103,
+                        "sequence": 639,
+                        "itemName": "血管造影",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1821,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "338",
+                                "options": [
+                                    {
+                                        "optionId": 338,
+                                        "optionName": "冠状动脉"
+                                    },
+                                    {
+                                        "optionId": 375,
+                                        "optionName": "外周血管"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 1103,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1822,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 1103,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1823,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2015-11-1",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 1103,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1824,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 1103,
+                                "itemValues": [
+                                    null
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 1078,
+                        "sequence": 640,
+                        "itemName": "肺功能",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1721,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "376",
+                                "options": [
+                                    {
+                                        "optionId": 376,
+                                        "optionName": "肺部"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 1078,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1722,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 1078,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1723,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2015-1-28",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 1078,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1724,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 1078,
+                                "itemValues": [
+                                    null
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 976,
+                        "sequence": 641,
+                        "itemName": "内窥镜检查",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1313,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "377",
+                                "options": [
+                                    {
+                                        "optionId": 377,
+                                        "optionName": "胃肠"
+                                    },
+                                    {
+                                        "optionId": 378,
+                                        "optionName": "尿道"
+                                    },
+                                    {
+                                        "optionId": 379,
+                                        "optionName": "阴道"
+                                    },
+                                    {
+                                        "optionId": 373,
+                                        "optionName": "其他部位"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 976,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1314,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 976,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1315,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2015-1-26",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 976,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1316,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 976,
+                                "itemValues": [
+                                    null
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    },
+                    {
+                        "itemId": 1055,
+                        "sequence": 642,
+                        "itemName": "病理检查",
+                        "level": 2,
+                        "childNodes": [
+                            {
+                                "itemId": 1629,
+                                "sequence": 1,
+                                "itemName": "部位",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "374",
+                                "options": [
+                                    {
+                                        "optionId": 374,
+                                        "optionName": "任何部位"
+                                    }
+                                ],
+                                "itemTypeId": 9,
+                                "parentId": 1055,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1630,
+                                "sequence": 2,
+                                "itemName": "结果报告",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "好",
+                                "options": [],
+                                "itemTypeId": 2,
+                                "parentId": 1055,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1631,
+                                "sequence": 8000,
+                                "itemName": "检查时间",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "2018-3-20",
+                                "options": [],
+                                "itemTypeId": 11,
+                                "parentId": 1055,
+                                "itemValues": []
+                            },
+                            {
+                                "itemId": 1632,
+                                "sequence": 8001,
+                                "itemName": "上传影像图片",
+                                "level": 3,
+                                "childNodes": [],
+                                "itemUnit": null,
+                                "itemValue": "",
+                                "options": [],
+                                "itemTypeId": 10,
+                                "parentId": 1055,
+                                "itemValues": [
+                                    null
+                                ]
+                            }
+                        ],
+                        "itemUnit": null,
+                        "itemValue": null,
+                        "options": [],
+                        "itemTypeId": 1,
+                        "parentId": 5,
+                        "itemValues": []
+                    }
+                ],
+                "itemUnit": null,
+                "itemValue": null,
+                "options": [],
+                "itemTypeId": 1,
+                "parentId": 0,
+                "itemValues": []
+            }
+        ],
+        // "treatment":{
+        //     "emr_main_id":"400",
+        //     "img_url":"http://testimg-1253887111.file.myqcloud.com/",
+        //     "img_url_list":[
+        //         null
+        //     ]
+        // },
+        "treatment": {
+            "emr_main_id": "234",
+            "treat_content": "goLOL呢了个",
+            "img_url": "http://testimg-1253887111.file.myqcloud.com/",
+            "img_url_list": [
+                "comment1.png",
+                "course1.png",
+                "banner1.png"
+            ]
         },
-        {
-            "level":1,
-            "itemId":2,
-            "advance":0,
-            "options":[
-
-            ],
-            "itemName":"症状",
-            "itemUnit":null,
-            "lowerRef":null,
-            "parentId":0,
-            "sequence":2,
-            "upperRef":null,
-            "childNodes":[
-                {
-                    "level":2,
-                    "itemId":352,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"多饮多尿相关",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":1,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":361,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"是否总是口干，想喝水？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"烦渴",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":362,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"总是喜欢喝凉水吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"喜凉水",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":360,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"全天24小时喝多少水(包括水，饮料，粥，汤)？",
-                            "itemUnit":"ml／天",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":3,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"饮水量",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"3000.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":364,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"入睡后小便几次？",
-                            "itemUnit":"次",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":4,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"夜尿次数",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"3.0000"
-                        },
-                        {
-                            "level":3,
-                            "itemId":363,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"是不是总也感觉不到口渴？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":5,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"口渴感丧失",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":366,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"晚上是否尿床？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":6,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"夜间遗尿",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":365,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"下肢肿胀、疼痛或双侧腿围不相同吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":7,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"血栓形成",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"神经垂体受累",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":353,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"颅内压相关",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":2,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":367,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":119,
-                                    "optionName":"未填写"
-                                },
-                                {
-                                    "optionId":120,
-                                    "optionName":"轻"
-                                },
-                                {
-                                    "optionId":121,
-                                    "optionName":"中"
-                                },
-                                {
-                                    "optionId":122,
-                                    "optionName":"重"
-                                },
-                                {
-                                    "optionId":124,
-                                    "optionName":"后枕"
-                                },
-                                {
-                                    "optionId":126,
-                                    "optionName":"左侧"
-                                },
-                                {
-                                    "optionId":127,
-                                    "optionName":"右侧"
-                                },
-                                {
-                                    "optionId":123,
-                                    "optionName":"前额"
-                                },
-                                {
-                                    "optionId":125,
-                                    "optionName":"两太阳穴"
-                                }
-                            ],
-                            "itemName":"经常头痛吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"头痛",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":370,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"有昏迷或意识不清吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":5,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"昏迷",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":371,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"不感冒的情况下，鼻子流清水吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":6,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"脑脊液鼻漏",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":368,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"经常恶心吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":17,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"恶心",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":369,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"呕吐过吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":23,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"呕吐",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"颅内高压症状",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":354,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"视力改变相关",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":3,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":372,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"看东西哪里缺一块吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":7,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"视野缺损",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":373,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"视力较前下降吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"视力下降",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":374,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"有一侧或双侧眼睛失明吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":9,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"失明",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":375,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"看东西有重影吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":10,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"复视",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"视神经受累",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":355,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"下丘脑功能相关",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":4,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":376,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"经常发烧吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":11,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"发热",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":377,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"出汗和其他人有不同吗？（比如经常出汗或不出汗）",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":12,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"出汗异常",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":378,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"总是不想吃饭吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":13,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"厌食",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":379,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"总想睡觉吗？（比如白天坐着也能睡着）",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":14,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"嗜睡",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":380,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"容易忘事儿吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":15,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"记忆力下降",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":381,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"平时总想吃，一直不觉得饱吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":16,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"贪食",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"下丘脑综合征",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":356,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"性腺功能相关",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":5,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":382,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"（女性）是否到现在还没有来过月经？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":17,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"原发闭经（女）>13岁无月经来潮",
-                            "ageControlLower":156,
-                            "ageControlUpper":8640,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":383,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"（女性）有连续3个月不来月经吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":18,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"停经（女）",
-                            "ageControlLower":156,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":384,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"性欲有下降吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":19,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"性欲减退",
-                            "ageControlLower":216,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":385,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"（男性）有阳痿、早泄吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":20,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"性功能减退",
-                            "ageControlLower":216,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":386,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"没有青春期发育吗（没有胡须及阴毛生长）？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":21,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"性器官不发育",
-                            "ageControlLower":156,
-                            "ageControlUpper":8640,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"性腺受累",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":357,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"垂体前叶功能相关",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":6,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":388,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"经常头晕吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":3,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"头晕",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":389,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"身高增长比同龄人慢吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":4,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"生长迟缓",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":387,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"经常怕冷吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":22,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"畏寒",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":390,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"总觉得乏力、全身没劲吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":65,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"乏力倦怠",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":391,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"头发，体毛有脱落吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":66,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"毛发脱落",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":392,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"胃口不好，吃不下东西吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":67,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"纳差",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":393,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"经常几天不解大便吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":68,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"便秘",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"腺垂体功能受累",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":358,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"神经系统症状",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":7,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":394,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"有犯过羊角风，口吐白沫吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":73,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"癫痫",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":395,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"有偏瘫，哪一侧肢体不能活动吗",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":74,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"偏瘫",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":396,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"别人觉得你笨，算术能力下降吗?",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":75,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"痴呆",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":397,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"清醒时经常不知道自己在哪儿吗（比如不知道在家还是在医院）？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":76,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"定向力差",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":398,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":44,
-                                    "optionName":"是"
-                                },
-                                {
-                                    "optionId":45,
-                                    "optionName":"否"
-                                },
-                                {
-                                    "optionId":61,
-                                    "optionName":"不知道"
-                                }
-                            ],
-                            "itemName":"平时大小便憋不住吗？",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":77,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":7,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"大小便失禁",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"神经系统受累",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                }
-            ],
-            "itemNameEn":null,
-            "itemTypeId":1,
-            "lowerLimit":0,
-            "sexControl":"0,1",
-            "upperLimit":0,
-            "precautions":null,
-            "itemNameAbbr":null,
-            "itemNameDoctor":"症状",
-            "ageControlLower":0,
-            "ageControlUpper":1800,
-            "displayStartValue":null
+        // "other": {
+        //     "emr_main_id": "234",
+        //     "emr_img_id": '123',
+        //     "other_content": "其他内容测试",
+        //     "img_url": "http://testimg-1253887111.file.myqcloud.com/",
+        //     "img_url_list": [
+        //         "banner0.jpg"
+        //     ]
+        // },
+        "other":{
+            "emr_main_id":300,
+            "emr_img_id":136,
+            "other_content":"168，55kg，还有啥",
+            "img_url":"http://testimg-1253887111.file.myqcloud.com/",
+            "img_url_list":[
+                "1521522079723_SelfieCity_20161105180520_org.jpg"
+            ]
         },
-        {
-            "level":1,
-            "itemId":3,
-            "advance":0,
-            "options":[
+        "emrInfo": [
+            {
+                "disease_name": "更年期综合征",
+                "is_main_disease": "是",
+                "is_diag": "是"
+            },
+            {
+                "disease_name": "淘宝病",
+                "is_main_disease": "否",
+                "is_diag": "是"
+            },
+            {
+                "disease_name": "京东病",
+                "is_main_disease": "否",
+                "is_diag": "是"
+            }
+        ],
+        "event": [
+            {
+                "emr_main_id": "234",
+                "emr_main_event_id": null,
+                "event_date": "2018年06月01日",
+                "event_remark": "nb",
+                "emr_img_id": null,
+                "img_url": "http://testimg-1253887111.file.myqcloud.com/",
+                "img_url_list": [
+
+                ],
+                "level_1_option_list": [
+                    {
+                        "option_id": 10,
+                        "option_name": "生育"
+                    },
+                    {
+                        "option_id": 13,
+                        "option_name": "其他"
+                    },
+                    {
+                        "option_id": 214,
+                        "option_name": "产后大出血"
+                    },
+                    {
+                        "option_id": 215,
+                        "option_name": "头部手术"
+                    },
+                    {
+                        "option_id": 216,
+                        "option_name": "头部外伤"
+                    },
+                    {
+                        "option_id": 217,
+                        "option_name": "头部放疗"
+                    }
+                ],
+                "level_1_selected_id": "10",
+                "level_2_option_list": [
+                    {
+                        "option_id": 16,
+                        "option_name": "头部外伤"
+                    },
+                    {
+                        "option_id": 17,
+                        "option_name": "头部放疗"
+                    }
+                ],
+                "level_2_selected_id": "16"
+            }
+        ],
+        "mobile": "18333673193",
+        "resion": 'ok'
+    }
+}
 
-            ],
-            "itemName":"体征",
-            "itemUnit":null,
-            "lowerRef":null,
-            "parentId":0,
-            "sequence":3,
-            "upperRef":null,
-            "childNodes":[
-                {
-                    "level":2,
-                    "itemId":148,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"身高",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":1,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"身高",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":149,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"体重",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":2,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"体重",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":429,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"呼吸",
-                    "itemUnit":"次/分",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":3,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"呼吸",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"20.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":431,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"心率",
-                    "itemUnit":"次/分",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":4,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"心率",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"80.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":438,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"血压(高压)",
-                    "itemUnit":"mmHg",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":5,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"血压(收缩压)",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"90.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":427,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"血压(低压)",
-                    "itemUnit":"mmHg",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":6,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"血压(舒张压)",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"60.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":428,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"体温",
-                    "itemUnit":"摄氏度",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":7,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"体温",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"36.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":150,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"体重指数",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":8,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"体重指数",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":151,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"腰围",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":9,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"腰围",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":440,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"头围",
-                    "itemUnit":"cm",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":9,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"头围",
-                    "ageControlLower":0,
-                    "ageControlUpper":1440,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":430,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":259,
-                            "optionName":"齐"
-                        },
-                        {
-                            "optionId":260,
-                            "optionName":"不齐"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"心律齐",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":10,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"心律齐",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":432,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"皮肤干燥",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":11,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"皮肤干燥",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":424,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"下肢水肿",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":12,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"下肢水肿",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":423,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"上半身长",
-                    "itemUnit":"cm",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":13,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"上部量",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"80.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":425,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"下半身长",
-                    "itemUnit":"cm",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":14,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"下部量",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"80.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":434,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":119,
-                            "optionName":"未填写"
-                        },
-                        {
-                            "optionId":72,
-                            "optionName":"正常"
-                        },
-                        {
-                            "optionId":198,
-                            "optionName":"不正常"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"粗测视野",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":15,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":9,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"粗测视野情况",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":426,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":200,
-                            "optionName":"1期"
-                        },
-                        {
-                            "optionId":201,
-                            "optionName":"2期"
-                        },
-                        {
-                            "optionId":202,
-                            "optionName":"3期"
-                        },
-                        {
-                            "optionId":203,
-                            "optionName":"4期"
-                        },
-                        {
-                            "optionId":204,
-                            "optionName":"5期"
-                        },
-                        {
-                            "optionId":205,
-                            "optionName":"6期"
-                        }
-                    ],
-                    "itemName":"乳房分期",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":16,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":9,
-                    "lowerLimit":0,
-                    "sexControl":"0",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"乳房分期",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":435,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":44,
-                            "optionName":"是"
-                        },
-                        {
-                            "optionId":45,
-                            "optionName":"否"
-                        },
-                        {
-                            "optionId":61,
-                            "optionName":"不知道"
-                        }
-                    ],
-                    "itemName":"触发泌乳",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":17,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":7,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"触发泌乳",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":436,
-                    "advance":0,
-                    "options":[
-                        {
-                            "optionId":200,
-                            "optionName":"1期"
-                        },
-                        {
-                            "optionId":201,
-                            "optionName":"2期"
-                        },
-                        {
-                            "optionId":202,
-                            "optionName":"3期"
-                        },
-                        {
-                            "optionId":203,
-                            "optionName":"4期"
-                        },
-                        {
-                            "optionId":204,
-                            "optionName":"5期"
-                        },
-                        {
-                            "optionId":205,
-                            "optionName":"6期"
-                        }
-                    ],
-                    "itemName":"阴毛分期",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":18,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":9,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"阴毛分期",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":437,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"阴茎长径",
-                    "itemUnit":"cm",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":19,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"阴茎长径",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"5.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":433,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"睾丸体积",
-                    "itemUnit":"ml",
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":20,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":8,
-                    "lowerLimit":0,
-                    "sexControl":"1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"睾丸体积",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":"4.0000"
-                },
-                {
-                    "level":2,
-                    "itemId":163,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"上传图片",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":8001,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":10,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"上传图片",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":439,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"其他",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":10000,
-                    "upperRef":null,
-                    "childNodes":[
-
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":2,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"其他",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                }
-            ],
-            "itemNameEn":null,
-            "itemTypeId":1,
-            "lowerLimit":0,
-            "sexControl":"0,1",
-            "upperLimit":0,
-            "precautions":null,
-            "itemNameAbbr":null,
-            "itemNameDoctor":"体征",
-            "ageControlLower":0,
-            "ageControlUpper":1800,
-            "displayStartValue":null
-        },
-        {
-            "level":1,
-            "itemId":4,
-            "advance":0,
-            "options":[
-
-            ],
-            "itemName":"化验",
-            "itemUnit":null,
-            "lowerRef":null,
-            "parentId":0,
-            "sequence":4,
-            "upperRef":null,
-            "childNodes":[
-                {
-                    "level":2,
-                    "itemId":164,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"血常规",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":1,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":172,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"白细胞",
-                            "itemUnit":"10^9/l",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"WBC(*10^9)",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"白细胞",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":173,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"中性粒细胞百分比",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"GR%",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"中性粒细胞百分比",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":174,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"淋巴细胞百分比",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":3,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"LY%",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"淋巴细胞百分比",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":175,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"红细胞",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":4,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"RBC(*10^12)",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"红细胞",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":3930,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"血红蛋白",
-                            "itemUnit":"g/l",
-                            "lowerRef":"110",
-                            "parentId":0,
-                            "sequence":5,
-                            "upperRef":"150",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"Hgb",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"血红蛋白",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"130"
-                        },
-                        {
-                            "level":3,
-                            "itemId":179,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"血小板",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":6,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"PLT(*10^9)",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"血小板",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":187,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":188,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"血常规",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":165,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"肝功",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":2,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":189,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"丙氨酸氨基转移酶",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":23,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"ALT",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"丙氨酸氨基转移酶",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":190,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"天门冬氨酸氨基转移酶",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":24,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"AST",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"天门冬氨酸氨基转移酶",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":191,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"谷氨酰转肽酶",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":25,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"GGT",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"谷氨酰转肽酶",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":192,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"总胆红素",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":26,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"TBIL",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"总胆红素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":193,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"直接胆红素",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":27,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"DBIL",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"直接胆红素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":194,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"碱性磷酸酶",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":28,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"ALP",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"碱性磷酸酶",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":195,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"白蛋白",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":29,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"ALB",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"白蛋白",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":196,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":197,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"肝功",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":166,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"肾功",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":3,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":198,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"尿素",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":30,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"Urea",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"尿素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":199,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"肌酐",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":31,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"Cr",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"肌酐",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":200,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"尿酸",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":32,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"UA",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"尿酸",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":205,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5138,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"肾功",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":167,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"电解质",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":4,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":207,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"血钠",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":33,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"Na",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"血钠",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":208,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"血钾",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":34,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"K",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"血钾",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":209,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"血钙",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":35,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"Ca",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"血钙",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":210,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"血磷",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":36,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"P",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"血磷",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":214,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":215,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"电解质",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":168,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"血脂",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":5,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":216,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"甘油三酯",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":37,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"TG",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"甘油三酯",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":217,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"总胆固醇",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":38,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"TC",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"总胆固醇",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":218,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"低密度脂蛋白胆固醇",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":39,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"LDL-C",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"低密度脂蛋白胆固醇",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":219,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"高密度脂蛋白胆固醇",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":40,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"HDL-C",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"高密度脂蛋白胆固醇",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":223,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":224,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"血脂",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":2328,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"甲状腺功能",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":6,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":3501,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"游离三碘甲腺原氨酸",
-                            "itemUnit":"pg/ml",
-                            "lowerRef":"1.8",
-                            "parentId":0,
-                            "sequence":41,
-                            "upperRef":"4.1",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"FT3",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"游离三碘甲腺原氨酸",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"3"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3518,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"游离甲状腺素",
-                            "itemUnit":"ng/dl",
-                            "lowerRef":"0.81",
-                            "parentId":0,
-                            "sequence":42,
-                            "upperRef":"1.89",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"FT4",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"游离甲状腺素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"1.4"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3120,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"三碘甲腺原氨酸",
-                            "itemUnit":"ng/ml",
-                            "lowerRef":"0.66",
-                            "parentId":0,
-                            "sequence":43,
-                            "upperRef":"1.92",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"T3",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"三碘甲腺原氨酸",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"1.3"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3601,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"甲状腺素",
-                            "itemUnit":"ug/dl",
-                            "lowerRef":"4.3",
-                            "parentId":0,
-                            "sequence":44,
-                            "upperRef":"12.5",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"T4",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"甲状腺素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"8"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3212,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"促甲状腺素",
-                            "itemUnit":"uIu/ml",
-                            "lowerRef":"0.38",
-                            "parentId":0,
-                            "sequence":45,
-                            "upperRef":"4.34",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"TSH",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"促甲状腺素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"2.5"
-                        },
-                        {
-                            "level":0,
-                            "itemId":5110,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5174,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"jzxgn",
-                    "itemNameDoctor":"甲状腺功能",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":2339,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"肾上腺皮质轴",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":7,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":3235,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"促肾上腺皮质素",
-                            "itemUnit":"pg/ml",
-                            "lowerRef":"0",
-                            "parentId":0,
-                            "sequence":0,
-                            "upperRef":"46",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"ACTH",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"促肾上腺皮质素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"20"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3666,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"皮质醇",
-                            "itemUnit":"ug/dl",
-                            "lowerRef":"4",
-                            "parentId":0,
-                            "sequence":46,
-                            "upperRef":"22.3",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"F(8am)",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"皮质醇",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"14"
-                        },
-                        {
-                            "level":0,
-                            "itemId":5121,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5185,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"xqpzcjl",
-                    "itemNameDoctor":"肾上腺皮质轴",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":2294,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"GH-IGF-1轴",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":8,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":3558,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"生长激素",
-                            "itemUnit":"ng/ml",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":47,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"GH",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":"不同状态值不同",
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"生长激素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"2"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3752,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"类胰岛素样生长因子1",
-                            "itemUnit":"ng/ml",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":48,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"IGF-1",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":"不同年龄有不同正常值",
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"类胰岛素样生长因子1",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"200"
-                        },
-                        {
-                            "level":0,
-                            "itemId":5076,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5140,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"gh-igf-1z",
-                    "itemNameDoctor":"GH-IGF-1轴",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":2319,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"性激素",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":9,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":6469,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"孕酮",
-                            "itemUnit":"ng/ml",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":0,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"P",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"孕酮",
-                            "ageControlLower":120,
-                            "ageControlUpper":600,
-                            "displayStartValue":"5"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3269,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"卵泡刺激素",
-                            "itemUnit":"IU/L",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":49,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"FSH",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"卵泡刺激素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"5"
-                        },
-                        {
-                            "level":3,
-                            "itemId":4090,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"黄体生成素",
-                            "itemUnit":"IU/L",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":50,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"LH",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"黄体生成素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"5"
-                        },
-                        {
-                            "level":3,
-                            "itemId":4043,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"雌二醇",
-                            "itemUnit":"pg/ml",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":51,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"E2",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"雌二醇",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"150"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3692,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"睾酮",
-                            "itemUnit":"ng/ml",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":52,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"T",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"睾酮",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"5"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3246,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"催乳素",
-                            "itemUnit":"ng/ml",
-                            "lowerRef":"0",
-                            "parentId":0,
-                            "sequence":53,
-                            "upperRef":"30",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"PRL",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"催乳素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"10"
-                        },
-                        {
-                            "level":0,
-                            "itemId":5101,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5165,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"xjs",
-                    "itemNameDoctor":"性激素",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":171,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"肿瘤指标",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":10,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":3616,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"甲胎蛋白",
-                            "itemUnit":"ng/ml",
-                            "lowerRef":"0",
-                            "parentId":0,
-                            "sequence":54,
-                            "upperRef":"20",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"AFP",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"甲胎蛋白",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"5"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3622,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"癌胚抗原",
-                            "itemUnit":"ng/ml",
-                            "lowerRef":"0",
-                            "parentId":0,
-                            "sequence":55,
-                            "upperRef":"5",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"CEA",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"癌胚抗原",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"3"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3115,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"β人绒毛膜促性腺激素",
-                            "itemUnit":"IU/L",
-                            "lowerRef":"0",
-                            "parentId":0,
-                            "sequence":56,
-                            "upperRef":"5",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"βHCG",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"β人绒毛膜促性腺激素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"2"
-                        },
-                        {
-                            "level":3,
-                            "itemId":240,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":241,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"肿瘤指标",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":2332,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"糖代谢",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":11,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":3733,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"空腹血清葡萄糖",
-                            "itemUnit":"mmol/l",
-                            "lowerRef":"3.9",
-                            "parentId":0,
-                            "sequence":57,
-                            "upperRef":"6.1",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"GLU",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"空腹血清葡萄糖",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"5"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3761,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"糖化血红蛋白",
-                            "itemUnit":"%",
-                            "lowerRef":"4.5",
-                            "parentId":0,
-                            "sequence":58,
-                            "upperRef":"6.3",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"HbA1c",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"糖化血红蛋白",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"5.5"
-                        },
-                        {
-                            "level":3,
-                            "itemId":4061,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"餐后2小时血清葡萄糖",
-                            "itemUnit":"mmol/l",
-                            "lowerRef":"3.9",
-                            "parentId":0,
-                            "sequence":58,
-                            "upperRef":"7.8",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"2hPBG",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"餐后2小时血清葡萄糖",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"8"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3757,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"糖化白蛋白",
-                            "itemUnit":"%",
-                            "lowerRef":"10.8",
-                            "parentId":0,
-                            "sequence":59,
-                            "upperRef":"17.1",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"GA",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"糖化白蛋白",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"14"
-                        },
-                        {
-                            "level":0,
-                            "itemId":5114,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5178,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"tdx",
-                    "itemNameDoctor":"糖代谢",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":2313,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"尿常规",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":12,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":3320,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"尿比重",
-                            "itemUnit":null,
-                            "lowerRef":"1.005",
-                            "parentId":0,
-                            "sequence":59,
-                            "upperRef":"1.03",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"SG",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"尿比重",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"1.2"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3351,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"尿葡萄糖",
-                            "itemUnit":"mmol/L",
-                            "lowerRef":"0",
-                            "parentId":0,
-                            "sequence":60,
-                            "upperRef":"0",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"GLU",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"尿葡萄糖",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"0"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3364,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"尿蛋白(Pro)",
-                            "itemUnit":"g/L",
-                            "lowerRef":"阴性",
-                            "parentId":0,
-                            "sequence":61,
-                            "upperRef":"阴性",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"Pro",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"尿蛋白",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5095,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5159,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"jcg",
-                    "itemNameDoctor":"尿常规",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":2323,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"渗透压组合(血)",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":13,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":3913,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"血渗透压",
-                            "itemUnit":"mOsm/kg.H2O",
-                            "lowerRef":"285",
-                            "parentId":0,
-                            "sequence":62,
-                            "upperRef":"295",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"血渗透压",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"血渗透压",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"290"
-                        },
-                        {
-                            "level":0,
-                            "itemId":5105,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5169,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"styzh(x)",
-                    "itemNameDoctor":"渗透压组合(血)",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":2322,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"渗透压组合(尿)",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":14,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":3331,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"尿渗透压",
-                            "itemUnit":"mOsm/kg.H2O",
-                            "lowerRef":"无",
-                            "parentId":0,
-                            "sequence":63,
-                            "upperRef":"无",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"尿渗透压",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"尿渗透压",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"400"
-                        },
-                        {
-                            "level":0,
-                            "itemId":5104,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5168,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"styzh(j)",
-                    "itemNameDoctor":"渗透压组合(尿)",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":2350,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"骨代谢",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":317,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":3406,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"总维生素D",
-                            "itemUnit":"ng/ml",
-                            "lowerRef":"30",
-                            "parentId":0,
-                            "sequence":389,
-                            "upperRef":"50",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"25(OH)D3",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"总维生素D",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"15"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3579,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"甲状旁腺素",
-                            "itemUnit":"pg/ml",
-                            "lowerRef":"12",
-                            "parentId":0,
-                            "sequence":390,
-                            "upperRef":"65",
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"PTH",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"甲状旁腺素",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"30"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3070,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"24小时尿钙",
-                            "itemUnit":"mmol/24h",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":391,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"24hUCa",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"24小时尿钙",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"2"
-                        },
-                        {
-                            "level":3,
-                            "itemId":3061,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"24小时尿磷",
-                            "itemUnit":"mmol/24h",
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":392,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":"24hUP",
-                            "itemTypeId":8,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":"",
-                            "itemNameDoctor":"24小时尿磷",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":"5"
-                        },
-                        {
-                            "level":0,
-                            "itemId":5132,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":0,
-                            "itemId":5196,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":"",
-                    "itemNameDoctor":"骨代谢",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                }
-            ],
-            "itemNameEn":null,
-            "itemTypeId":1,
-            "lowerLimit":0,
-            "sexControl":"0,1",
-            "upperLimit":0,
-            "precautions":null,
-            "itemNameAbbr":null,
-            "itemNameDoctor":"化验",
-            "ageControlLower":0,
-            "ageControlUpper":1800,
-            "displayStartValue":null
-        },
-        {
-            "level":1,
-            "itemId":5,
-            "advance":0,
-            "options":[
-
-            ],
-            "itemName":"辅助检查",
-            "itemUnit":null,
-            "lowerRef":null,
-            "parentId":0,
-            "sequence":5,
-            "upperRef":null,
-            "childNodes":[
-                {
-                    "level":2,
-                    "itemId":960,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"MRI",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":1,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1249,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":280,
-                                    "optionName":"鞍区"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1250,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1251,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1252,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"MRI",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":958,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"CT",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":2,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1241,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":319,
-                                    "optionName":"头颅"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1242,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1243,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1244,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"CT",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":1120,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"骨密度（X线）",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":3,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1889,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":278,
-                                    "optionName":"腰椎"
-                                },
-                                {
-                                    "optionId":279,
-                                    "optionName":"髋部"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1890,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1891,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1892,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"骨密度（X线）",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":1121,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"骨密度（超声）",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":3,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1893,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":287,
-                                    "optionName":"跟骨"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1894,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1895,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1896,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"骨密度（超声）",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":1122,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"骨年龄（岁）",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":3,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1897,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":289,
-                                    "optionName":"左手"
-                                },
-                                {
-                                    "optionId":290,
-                                    "optionName":"肘"
-                                },
-                                {
-                                    "optionId":287,
-                                    "optionName":"跟骨"
-                                },
-                                {
-                                    "optionId":291,
-                                    "optionName":"髋"
-                                },
-                                {
-                                    "optionId":269,
-                                    "optionName":"左手+肘"
-                                },
-                                {
-                                    "optionId":270,
-                                    "optionName":"左手+肘+跟骨"
-                                },
-                                {
-                                    "optionId":271,
-                                    "optionName":"左手+肘+跟骨+髋部"
-                                },
-                                {
-                                    "optionId":292,
-                                    "optionName":"左手+肘+跟骨+髋"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1898,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1899,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1900,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"骨年龄（岁）",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":1014,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"子宫附件B超",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":4,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1465,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":282,
-                                    "optionName":"子宫"
-                                },
-                                {
-                                    "optionId":283,
-                                    "optionName":"卵巢"
-                                },
-                                {
-                                    "optionId":272,
-                                    "optionName":"双附件"
-                                },
-                                {
-                                    "optionId":273,
-                                    "optionName":"子宫+双附件"
-                                },
-                                {
-                                    "optionId":274,
-                                    "optionName":"盆腔"
-                                },
-                                {
-                                    "optionId":372,
-                                    "optionName":"子宫、卵巢、盆腔"
-                                },
-                                {
-                                    "optionId":284,
-                                    "optionName":"全部（子宫+双附件）"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1466,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1467,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1468,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"子宫附件B超",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":1066,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"睾丸B超",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":126,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1673,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":306,
-                                    "optionName":"睾丸"
-                                },
-                                {
-                                    "optionId":322,
-                                    "optionName":"双睾丸"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1674,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1675,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1676,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"睾丸B超",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":1040,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"泌尿系B超",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":127,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1569,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":275,
-                                    "optionName":"双肾"
-                                },
-                                {
-                                    "optionId":276,
-                                    "optionName":"输尿管"
-                                },
-                                {
-                                    "optionId":369,
-                                    "optionName":"双肾+输尿管+膀胱"
-                                },
-                                {
-                                    "optionId":277,
-                                    "optionName":"膀胱"
-                                },
-                                {
-                                    "optionId":325,
-                                    "optionName":"双肾，输尿管，膀胱"
-                                },
-                                {
-                                    "optionId":342,
-                                    "optionName":"双肾、输尿管、膀胱"
-                                },
-                                {
-                                    "optionId":281,
-                                    "optionName":"全部（双肾+输尿管+膀胱）"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1570,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1571,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1572,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"泌尿系B超",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":1104,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"视力检查",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":128,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1825,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":307,
-                                    "optionName":"视力检查"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1826,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1827,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1828,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"视力检查",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":1105,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"视野检查",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":129,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1829,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":308,
-                                    "optionName":"视野检查"
-                                },
-                                {
-                                    "optionId":293,
-                                    "optionName":"眼科"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1830,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1831,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1832,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"视野检查",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                },
-                {
-                    "level":2,
-                    "itemId":1064,
-                    "advance":0,
-                    "options":[
-
-                    ],
-                    "itemName":"眼底检查",
-                    "itemUnit":null,
-                    "lowerRef":null,
-                    "parentId":0,
-                    "sequence":130,
-                    "upperRef":null,
-                    "childNodes":[
-                        {
-                            "level":3,
-                            "itemId":1665,
-                            "advance":0,
-                            "options":[
-                                {
-                                    "optionId":297,
-                                    "optionName":"眼底"
-                                },
-                                {
-                                    "optionId":309,
-                                    "optionName":"眼底检查"
-                                }
-                            ],
-                            "itemName":"部位",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":1,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":9,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"部位",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1666,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"结果报告",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":2,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":2,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"结果报告",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1667,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"检查时间",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8000,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":11,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"检查时间",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        },
-                        {
-                            "level":3,
-                            "itemId":1668,
-                            "advance":0,
-                            "options":[
-
-                            ],
-                            "itemName":"上传影像图片",
-                            "itemUnit":null,
-                            "lowerRef":null,
-                            "parentId":0,
-                            "sequence":8001,
-                            "upperRef":null,
-                            "childNodes":[
-
-                            ],
-                            "itemNameEn":null,
-                            "itemTypeId":10,
-                            "lowerLimit":0,
-                            "sexControl":"0,1",
-                            "upperLimit":0,
-                            "precautions":null,
-                            "itemNameAbbr":null,
-                            "itemNameDoctor":"上传影像图片",
-                            "ageControlLower":0,
-                            "ageControlUpper":1800,
-                            "displayStartValue":null
-                        }
-                    ],
-                    "itemNameEn":null,
-                    "itemTypeId":1,
-                    "lowerLimit":0,
-                    "sexControl":"0,1",
-                    "upperLimit":0,
-                    "precautions":null,
-                    "itemNameAbbr":null,
-                    "itemNameDoctor":"眼底检查",
-                    "ageControlLower":0,
-                    "ageControlUpper":1800,
-                    "displayStartValue":null
-                }
-            ],
-            "itemNameEn":null,
-            "itemTypeId":1,
-            "lowerLimit":0,
-            "sexControl":"0,1",
-            "upperLimit":0,
-            "precautions":null,
-            "itemNameAbbr":null,
-            "itemNameDoctor":"辅助检查",
-            "ageControlLower":0,
-            "ageControlUpper":1800,
-            "displayStartValue":null
-        }
-    ]
-};
 var casesData = data.items;
 
 //数据

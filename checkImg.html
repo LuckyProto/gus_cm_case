@@ -3,22 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>病例审核</title>
-    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="libs/commoncss/base.css" />
-    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./libs/themes/default/style.min.css" />
-    <link rel="stylesheet" href="./libs/bootstrap_datepicker/bootstrap-datepicker3.css" />
-    <!--<link rel="stylesheet" href="./libs/ssi_uploader/ssi-uploader.css">-->
-    <link rel="stylesheet" href="./css/case_sec.css">
-    <link rel="stylesheet" href="./libs/zyUploader/control/css/zyUpload.css" type="text/css">
     <style>
         .imgWrap{
             width: 1200px;
             margin: 50px auto;
-        }
-
-        .imgWrap .previewPics{
-
         }
         .imgWrap .previewPics .previewPicsUl{
             margin: 0 auto;
@@ -34,7 +23,7 @@
             left: 20px;
             top: 75px;
             color: blue;
-            border: 1px solid orange;olute;
+            border: 1px solid orange;
         }
         .imgWrap .previewPics .previewPicsUl li button{
             position: absolute;
@@ -54,15 +43,13 @@
             cursor: pointer;
         }
 
-        .imgWrap .protoPics{
+        .imgWrap .protoPic{
             width: 100%;
             text-align: center;
         }
-        .imgWrap .protoPics .protoImg{
+        .imgWrap .protoPic .protoImg{
             width: 100%;
         }
-
-
     </style>
 </head>
 <body>
@@ -73,150 +60,262 @@
 
                 </ul>
             </div>
-            <div class="protoPics" id="protoPics">
+            <div class="protoPic" id="protoPic">
                 <img src="" alt="" id="protoImg" class="protoImg">
             </div>
         </div>
     </div>
 <script src="./libs/jquery/jquery.min.js"></script>
 <script src="./libs/qcload/cos-js-sdk-v5.min.js" type="text/javascript" charset="utf-8"></script>
-<!--<script src="./libs/ssi_uploader/ssi-uploader.js"></script>-->
-<script src="./libs/jstree/jstree.min.js"></script>
-<script src="./libs/bootstrap/bootstrap.min.js"></script>
-<script src="./libs/jquery/jquery.validate.min.js"></script>
-<script src="./libs/jquery/messages_zh.js"></script>
-<script src="./libs/mock/mock-min.js"></script>
 <script src="./libs/commonjs/cm_common.js"></script>
 <script src="./libs/commonjs/cm_common_url.js"></script>
-<script src="./libs/moment/moment.min.js"></script>
-<script src="./libs/bootstrap_datepicker/bootstrap-datepicker.min.js"></script>
-<script src="./libs/bootstrap_datepicker/bootstrap-datepicker.zh-CN.min.js"></script>
-<script src="./libs/zyUploader/core/zyFile.js"></script>
-<script src="./libs/zyUploader/control/js/zyUpload.js"></script>
-<!--<script src="./libs/zyUploader/core/lanrenzhijia.js"></script>-->
     <script>
-        window.onload = function(){
-            var emr_main_id = window.sessionStorage.getItem('emr_main_id'),
-                caseObj = {},
-                imgs = [],
-                queryStringArgs = getQueryStringArgs(),
-                key = queryStringArgs.itemId ? queryStringArgs.itemId : queryStringArgs.emr_main_id;
-            //获取emr_main_id
-            caseObj.emr_main_id = emr_main_id;
-            //获得缓存中的图片地址
-            imgs = window.localStorage.getItem(key).split(",");
-            //通过文档片段创建预览图
-            // var $previewPicsUl = $('#previewPicsUl'),
-            //     $fragment = $('<fragment>');
-            // for(var prop in imgs){
-            //     $li = $('<li>');
-            //     $btn_del = $('<button>').text('X');
-            //     $li.append($btn_del);
-            //     $img = $('<img>').attr({'src': imgs[prop]});
-            //     $li.append($img);
-            //     $fragment.append($li);
-            // }
-            // $previewPicsUl.append($fragment);
+        "use strict";
+        /*
+        * 原始数据
+        * */
+        var data = {
+            //时间与版本
+            _year                       : 2018,
+            edition                     : 1,
+            //请求方法
+            img_value_query_methodName  : "sp_cm_emr_img_value_query",      //获取图片
+            img_value_update_methodName : "sp_cm_emr_img_value_update",      //更新图片
+            //url参数
+            // item_type_id                : getQueryStringArgs().item_type_id,
+            emr_main_id                 : getQueryStringArgs().emr_main_id,
+            emr_img_id                  : getQueryStringArgs().emr_img_id,
+            itemId                      : getQueryStringArgs().itemId,
+            emr_main_event_id           : getQueryStringArgs().emr_main_event_id,
+            //存放图片的数组
+            imgs                        : [ ],
+            book                        : {}
+        };
 
-            //使用innerHtml创建DOM节点
-            var previewPicsUl = document.getElementById('previewPicsUl'),
-                html = '',
-                prop,
-                imgUrl = '';
-            for(var i = 0; i < imgs.length; i++){
-                imgUrl = qcloadUrl + imgs[i];
-                html += '<li><img src=' + imgUrl + '><a class="downloadA" href='+ imgUrl +' download>点击下载</a><button>' + 'x' + '</button></li>';
+        //数据属性
+        Object.defineProperty(data, "item_type_id", {
+            configurable: true,
+            enumerable: true,
+            writable: true,
+            value: getQueryStringArgs().item_type_id
+        })
+
+        //访问器属性
+        Object.defineProperties(data.book, {
+            _year: {
+                configurable: true,
+                enumerable: true,
+                value: 2018,
+                writable: true
+            },
+            edition: {
+                configurable: true,
+                enumerable: true,
+                value: 1,
+                writable: true
+            },
+            year: {
+                configurable: true,
+                enumerable: true,
+                set: function (newValue) {
+                    if(newValue > 2018){
+                        this._year = newValue;
+                        this.edition += newValue - 2018;
+                    }
+                },
+                get: function () {
+                    return this._year;
+                }
             }
-            previewPicsUl.innerHTML = html;
-            
-            //轮播图结构
-            // var idx = 0;
-            // setInterval(function () {
-            //    idx++;
-            //    if(idx >= $('#previewPicsUl').find('img').length){
-            //         idx= 0;
-            //    }
-            //    $('#previewPicsUl').find('li').eq(idx).css({'display': 'block'}).siblings().css({'display': 'none'});
-            // }, 2000)
-            
-            //默认显示第一张
-            $('#protoImg').attr({'src': $('#previewPicsUl').find('img').eq(0).attr('src')});
+        })
 
-            //点击显示大图
-            $('#previewPicsUl').delegate('img', 'click', function(){
-                var src = $(this).attr('src');
-                $('#protoImg').attr({'src': src});
-            })
+        data.book.year = 2019;
 
-            //点击旋转
-            var rotateY = 0;
-            $('#protoPics').delegate('img', 'click', function(){
-                rotateY +=  90;
-                $(this).css({'transform': 'rotate('+ rotateY +'deg)', 'cursor': 'se-resize'})
-            })
+        var descriptor = Object.getOwnPropertyDescriptor(data.book, 'year');
 
-            //删除图片
-            var cos = new COS({
-                SecretId: 'AKIDkqpiYCQu0Qgx2wrJjxzorpcCb9aqpmW5',
-                SecretKey: 'kJgqnZDg9YpvtgSEoDQSJzUow0eCoETk',
-            })
-            $('#previewPicsUl').delegate('button', 'click', function(){
-                if(confirm('确定删除吗?')){
-                    var self = $(this),
-                        src_delete = $(this).siblings().attr('src');
-                        src_del = $(this).siblings().attr('src').substring('44');
-                    cos.deleteObject({
-                        Bucket: 'testimg-1253887111',   /* 必须 */
-                        Region: 'ap-beijing-1',         /* 必须 */
-                        Key: src_del                            /* 必须 */
-                    }, function(err, data) {
-                        console.log(err || data);
-                        if(data.statusCode == 204){
-                            alert('删除成功');
-                            self.parent().remove();
-                            var storage = window.localStorage;
-                            for(var i = storage.length - 1; i>=0; i--){
-                                var imgObj = {},
-                                    key = storage.key(i),
-                                    valueStr = '',
-                                    valueArr = storage.getItem(key).split(',');
-                                valueArr.forEach(function (value, index, array) {
-                                    if(src_del == value){
-                                        valueArr.splice(index, 1)
-                                        if(valueArr.length == 0){
-                                            window.localStorage.removeItem(key);
-                                        }
+        /*
+        * 方法列表
+        * */
+        var methods = {
+            //请求数据 参数：方法名称，请求参数， JSON.stringify()方法的参数, 回调函数
+            fetchData: function (methodName, paramAjax, paramJSONFun, callback) {
+                            $.ajax({
+                                type: "POST",
+                                url: ajaxUrl + "comm",
+                                contentType: "application/json;charset=UTF-8",
+                                dataType: 'json',
+                                data: JSON.stringify({
+                                    methodName: methodName,
+                                    param: JSON.stringify(paramAjax, paramJSONFun, 4)
+                                }),
+                                success: function (res) {
+                                    if(res.code == 0){
+                                        callback(res)
                                     }
-                                })
-                                valueStr = valueArr.join(',');
-                                storage.setItem(key, valueStr);
-                                // var imgs = {},
-                                //     cases = [];
-                                // imgs.itemId = key;
-                                // imgs.itemValue = valueArr;
-                                // cases.push(imgs);
-                                // caseObj.items = cases;
-                                // $("#child").val(caseObj)
-                                // $.ajax({
-                                //     type: "POST",
-                                //     url: ajaxUrl + "comm",
-                                //     contentType : "application/json;charset=UTF-8",
-                                //     dataType: 'json',
-                                //     data: JSON.stringify({
-                                //         methodName: "sp_cm_emr_value_update",
-                                //         param: JSON.stringify(caseObj)
-                                //     }),
-                                //     success: function(data){
-                                //         console.log(data)
-                                //     }
-                                // })
-                            }
+                                }
+                            })
+                        },
+            //JSON.stringify()方法过滤器函数
+            stringifyFilter: function (key, value) {
+                        switch (key) {
+                            case "itemValues":
+                                return value.join();
+                                break;
+                            default:
+                                return value;
                         }
-                    });
-                }else{
-                    return;
+                    },
+            //删除云山图片
+            delQcload: function (delSrc, callback) {
+                var cos = new COS({
+                    SecretId: 'AKIDkqpiYCQu0Qgx2wrJjxzorpcCb9aqpmW5',
+                    SecretKey: 'kJgqnZDg9YpvtgSEoDQSJzUow0eCoETk',
+                })
+                cos.deleteObject({
+                    Bucket: 'testimg-1253887111',   /* 必须 */
+                    Region: 'ap-beijing-1',         /* 必须 */
+                    Key: delSrc                       /* 必须 */
+                }, function(err, res) {
+                    if(res.statusCode == 204){
+                        alert('删除成功');
+                        callback(delSrc)
+                    }
+                })
+            },
+            editParam: function (delSrc) {
+                var del_idx = data.imgs.indexOf(delSrc);
+                data.imgs.splice(del_idx, 1);
+
+                //保存数据
+                var paramImgUpdate = {
+                    "item_type_id"      : data.item_type_id,
+                    "emr_main_id"       : data.emr_main_id,
+                    "emr_img_id"        : data.emr_img_id,
+                    "itemId"            : data.itemId,
+                    "emr_main_event_id" : data.emr_main_event_id,
+                    "itemValues"        : data.imgs
+                }
+                methods.fetchData(data.img_value_update_methodName, paramImgUpdate, methods.stringifyFilter, function (res) {
+                    if(res.code == 0){
+                        alert('修改成功')
+                    }
+                })
+            },
+            showOgiginalImg: function (src) {
+                $('#protoImg').attr({'src': src});
+            }
+        };
+        /*
+        * 图片实例
+        * */
+        function PreviewImage(container, dictionary) {
+            this.container = container;
+            this.dictionary = dictionary;
+            this.init();
+            this.bindEvent();
+        }
+        PreviewImage.prototype.init = function () {
+            var domStr = [
+                '<li>',
+                '   <img src="'+ this.dictionary +'" alt="">',
+                '   <a href="'+ this.dictionary +'" download>点击下载</a>',
+                '   <button>X</button>',
+                '</li>'
+            ].join("");
+
+            this.$dom = $(domStr),
+            this.$img = this.$dom.find('img'),
+            this.$a   = this.$dom.find('a'),
+            this.$a.addClass("downloadA");
+            this.$btn = this.$dom.find('button');
+
+            this.$dom.appendTo(this.container)
+        }
+        PreviewImage.prototype.bindEvent = function () {
+            var self = this;
+            //删除
+            this.$btn.click(function () {
+                if(confirm('确定删除吗')){
+                    var delSrc = $(this).siblings().attr('src').substring('44');
+                    methods.delQcload(delSrc, methods.editParam);
+                    self.$dom.remove();
                 }
             })
+            //删除大图
+            this.$img.click(function () {
+                methods.showOgiginalImg(self.dictionary)
+            })
+        }
+
+        //工厂模式
+        function createPic(container, src) {
+            var img = new Image()
+            img.src = src;
+            img.onclick = function (ev) {
+                alert(this.src)
+            }
+            container.append(img);
+        }
+
+        function CreatePic(container, src) {
+            //参数
+            // this.container = container;
+            // this.src = src;
+            //创建实例并添加属性
+            this.img = document.createElement("img");
+            this.img.src = src;
+
+            //实例添加方法
+            this.img.addEventListener('click', function (e) {
+                alert(src)
+            })
+            this.sayName = function () {
+                alert(this.src)
+            }
+            container.appendChild(this.img)
+        }
+        /*
+        * 生命周期
+        * */
+        window.onload = function(){
+            //获取图片参数
+            var fentchImgParam = {
+                    item_type_id        : data.item_type_id,
+                    emr_main_id         : data.emr_main_id,
+                    emr_img_id          : data.emr_img_id,
+                    itemId              : data.itemId,
+                    emr_main_event_id   : data.emr_main_event_id
+                };
+
+            //请求图片
+            methods.fetchData(data.img_value_query_methodName, fentchImgParam, null, function (res) {
+                if(!res.data.img_url.split(',')) return;
+                data.imgs = res.data.img_url.split(',');
+                var previewPicsUl = document.getElementById('previewPicsUl'),
+                    $previewPicsUl = $("#previewPicsUl"),
+                    imgUrl = '';
+                    
+                //创建实例
+                var instance = [];
+                (function () {
+                    for(var i = 0; i < data.imgs.length; i++){
+                        imgUrl = qcloadUrl + data.imgs[i];
+                        new PreviewImage($previewPicsUl, imgUrl);
+                        // createPic($previewPicsUl, imgUrl)
+                        // instance[i] = new CreatePic(previewPicsUl, imgUrl)
+                    }
+                })()
+
+                //默认显示第一张
+                // $('#protoImg').attr({'src': $('#previewPicsUl').find('img').eq(0).attr('src')});
+
+                //点击旋转
+                var rotateY = 0;
+                $('#protoPic').delegate('img', 'click', function(){
+                    rotateY +=  90;
+                    $(this).css({'transform': 'rotate('+ rotateY +'deg)', 'cursor': 'se-resize'})
+                })
+            });
         }
     </script>
 </body>

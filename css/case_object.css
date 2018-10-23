@@ -60,7 +60,7 @@ width: 170%;
 display: none;
 }
 .app .levelOne .levelTwo .levelTwoUl>li .levelThree .levelThreeUl>li{
-height: 40px;
+/*height: 40px;*/
 border-top: 1px solid #000;
 border-left: 1px solid #000;
 border-right: 1px solid #000;
@@ -114,9 +114,14 @@ label{
     margin-bottom: 0px;
     margin-right: 10px;
 }
+
 /*显示默认图片轮播图*/
+.show-big-image{
+    margin-right: 50px;
+}
 .imgUpload{
     width: 100%;
+    height: 301px !important;
 }
 .imgUpload p{
     overflow: hidden;
@@ -146,6 +151,7 @@ label{
 .imgUpload div ul{
     position: relative;
     height: 250px;
+    z-index: -999;
 }
 .imgUpload div ul li{
     position: absolute;
@@ -157,7 +163,10 @@ label{
     width: 100%;
     height: 250px;
 }
-
+.input-img-upload{
+    display: inline !important;
+    width: 50%;
+}
 /*其它*/
 .main_disease_table tr{
     width: 100%;

@@ -152,7 +152,7 @@
 			this.funFilterEligibleFile = function(files){
 				var arrFiles = [];  // 替换的文件数组
 				for (var i = 0, file; file = files[i]; i++) {
-					if (file.size >= 51200000) {
+					if (file.size >= 1001200000) {
 						alert('您这个"'+ file.name +'"文件大小过大');	
 					} else {
 						// 在这里需要判断当前所有文件中
@@ -271,7 +271,7 @@
 								}
 								reader.readAsDataURL(file);
 							} else {
-								// 走到这里说明文件html已经组织完毕，要把html添加到预览区
+								//走到这里说明文件html已经组织完毕，要把html添加到预览区
 								funAppendPreviewHtml(html);
 							}
 						};
@@ -331,8 +331,8 @@
 						// console.info(files);
 					},
 					onProgress: function(file, loaded, total) {
-					    console.log("progress")
-						var eleProgress = $("#uploadProgress_" + file.index), percent = (loaded / total * 100).toFixed(2) + '%';
+						var eleProgress = $("#uploadProgress_" + file.index),
+                            percent = (loaded / total * 100).toFixed(2) + '%';
 						if(eleProgress.is(":hidden")){
 							eleProgress.show();
 						}
@@ -399,39 +399,34 @@
                         SecretId: 'AKIDkqpiYCQu0Qgx2wrJjxzorpcCb9aqpmW5',
                         SecretKey: 'kJgqnZDg9YpvtgSEoDQSJzUow0eCoETk',
                     })
-					// 判断当前是否有文件需要上传
+					//判断当前是否有文件需要上传
 					if(ZYFILE.funReturnNeedFiles().length > 0){
                         var len = ZYFILE.funReturnNeedFiles().length;
-
-                        for(var i = 0; i < ZYFILE.funReturnNeedFiles().length; i++){
-                            console.log('文件个数', ZYFILE.funReturnNeedFiles().length)
-                            var uploadingFile = ZYFILE.funReturnNeedFiles()[i];
-                            // $("#fileSubmit").click();
-                            cos.putObject({
-                                Bucket: 'testimg-1253887111',
-                                Region: 'ap-beijing-1',
-                                Key: ZYFILE.funReturnNeedFiles()[i].name,
-                                StorageClass: 'STANDARD',
-                                Body: ZYFILE.funReturnNeedFiles()[i], // 上传文件对象
-                                onProgress: function(uploadingFile, loaded, total) {
-                                    console.log("progress")
-                                    var eleProgress = $("#uploadProgress_" + file.index), percent = (loaded / total * 100).toFixed(2) + '%';
-                                    if(eleProgress.is(":hidden")){
-                                        eleProgress.show();
+                        for(var ii = 0; ii < len; ii++){
+                            console.log(ii);
+                            (function (h) {
+                                cos.putObject({
+                                    Bucket: 'testimg-1253887111',
+                                    Region: 'ap-beijing-1',
+                                    Key: ZYFILE.funReturnNeedFiles()[h].name,
+                                    StorageClass: 'STANDARD',
+                                    Body: ZYFILE.funReturnNeedFiles()[h], // 上传文件对象
+                                    onProgress: function(progressData) {
+                                        var eleProgress = $("#uploadProgress_" + h);
+                                        var percent = ((progressData.loaded) / (progressData.total) * 100).toFixed(2) + '%';
+                                        if(eleProgress.is(":hidden")){
+                                            eleProgress.show();
+                                        }
+                                        eleProgress.css("width",percent);
                                     }
-                                    eleProgress.css("width",percent);
-                                }
-                                // onProgress: function(progressData) {
-                                //     console.log(JSON.stringify(progressData));
-                                // }
-                            }, function(err, data) {
-                                // console.log(err || data);
-                                // console.log(data.Location);
-                                imgS.push(data.Location.substring(56));
-                            });
+                                }, function(err, data) {
+                                    console.log(data)
+                                    imgS.push(data.Location.substring(56));
+                                });
+                            })(ii)
                         }
                         var timer_imgUpload = setInterval(function(){
-                            if(i == len){
+                            if(ii == len){
                                 clearInterval(timer_imgUpload);
                                 alert('上传成功');
                                 var itemId = itemId_btn_imgUpload,
@@ -446,12 +441,13 @@
                                 }
                                 for(var j = 0; j < len; j++){
                                     ZYFILE.funReturnNeedFiles().pop();
+                                    console.log(ZYFILE.funReturnNeedFiles())
                                 }
                                 setTimeout(function(){
                                     $('#modal').modal('hide');
                                 }, 1000)
                             }
-                        }, 5000)
+                        }, 1000)
                     }else{
 						alert("请先选中文件再点击上传");
 					}
@@ -459,7 +455,7 @@
 				
 				// 如果快捷添加文件按钮存在
 				if($("#rapidAddImg").length > 0){
-					// 绑定添加点击事件
+					//绑定添加点击事件
 					$("#rapidAddImg").bind("click", function(e){
 						$("#fileImage").click();
 		            });
