@@ -122,16 +122,22 @@ ItemTypeOne.prototype.init = function(container, dictionary){
     this.$dom = $(domStr);
     this.$dom.appendTo(container);
     this.$levelThree = this.$dom.find('.levelThree');
+    this.$span = this.$dom.find('span');
+    this.$levelTwoP = this.$dom.find('.levelTwoP');
     if(Array.isArray(dictionary.childNodes)){
         this.$levelThreeUl = this.$dom.find('.levelThreeUl');
         dictionary.childNodes.forEach(function (value, index, array) {
             createCaseItem(self.$levelThreeUl, value);
         })
     }
+    if(dictionary.hasChild){
+        this.$levelTwoP.addClass('heart')
+    }
 }
 ItemTypeOne.prototype.bindEvent = function () {
     var self = this;
     this.$dom.delegate('.levelTwoP', 'click', function () {
+        // self.$levelTwoP.removeClass('heart')
         self.$levelThree.css({'display': 'block'}).parents('.levelTwoLi').siblings().children('.levelThree').css({"display": 'none'});
     })
 }
@@ -457,7 +463,7 @@ ImgUpload.prototype.init = function (container, dictionary) {
         '</li>'
     ].join("");
     var liStr = '',
-        qcloadUrl = 'http://testimg-1253887111.file.myqcloud.com/';
+        qcloadUrl = 'https://testimg-1253887111.file.myqcloud.com/';
     if(dictionary.itemValues && dictionary.itemValues[0] != null && dictionary.itemValues[0] != ""){
         // window.localStorage.setItem(dictionary.itemId,  dictionary.itemValues.join(','));
         dictionary.itemValues.forEach(function (value, index, array) {
@@ -533,7 +539,8 @@ ImgUpload.prototype.bindEvent = function (container, dictionary) {
             StorageClass: 'STANDARD',
             Body: newFile,       // 上传文件对象
         }, function(err, data) {
-            imgUrlArr.push(data.Location.substring(56));
+            console.log("l", data)
+            imgUrlArr.push(data.Location.substring(57));
             idx++;
             if(idx <= len - 1){
                 uploadQcload(files, idx, imgUrlArr, updataImgs)
@@ -550,6 +557,7 @@ ImgUpload.prototype.bindEvent = function (container, dictionary) {
         //获取原来的图片地址
         var originalImg = self.$input[0].getAttribute('data-itemValues'),
             itemValues = undefined;
+        console.log("originalImg", originalImg)
         if(originalImg){
             //如果原来有图片则拼到一起
             itemValues = originalImg.split().concat(imgUrlArr).join();
@@ -559,7 +567,7 @@ ImgUpload.prototype.bindEvent = function (container, dictionary) {
             itemValues = imgUrlArr.join();
             // self.$input[0].setAttribute('data-itemValues', imgUrlArr.join())
         }
-
+        console.log("itemValues", itemValues)
         var emr_main_id     = self.$a.attr('data-emr_main_id');
         var selfParam = {
             "emr_main_id"   : emr_main_id,
@@ -736,7 +744,7 @@ Treatment_ImgUpload.prototype.init = function (container, dictionary) {
         '</li>'
     ].join("");
     var liStr = '',
-        qcloadUrl = 'http://testimg-1253887111.file.myqcloud.com/';
+        qcloadUrl = 'https://testimg-1253887111.file.myqcloud.com/';
     if(dictionary.img_url_list && dictionary.img_url_list[0] != null && dictionary.img_url_list[0] != ""){
         // window.localStorage.setItem(dictionary.itemId,  dictionary.img_url_list.join(','));
         dictionary.img_url_list.forEach(function (value, index, array) {
@@ -808,7 +816,7 @@ Treatment_ImgUpload.prototype.bindEvent = function (container, dictionary) {
             StorageClass: 'STANDARD',
             Body: newFile,       // 上传文件对象
         }, function(err, data) {
-            imgUrlArr.push(data.Location.substring(56));
+            imgUrlArr.push(data.Location.substring(57));
             idx++;
             //递归调用
             if(idx <= len - 1){
@@ -888,7 +896,7 @@ Event_ImgUpload.prototype.init = function (container, dictionary) {
         '</li>'
     ].join("");
     var liStr = '',
-        qcloadUrl = 'http://testimg-1253887111.file.myqcloud.com/';
+        qcloadUrl = 'https://testimg-1253887111.file.myqcloud.com/';
     if(dictionary.img_url_list && dictionary.img_url_list[0] != null && dictionary.img_url_list[0] != ""){
         window.localStorage.setItem(dictionary.itemId,  dictionary.img_url_list.join(','));
         dictionary.img_url_list.forEach(function (value, index, array) {
@@ -959,7 +967,7 @@ Event_ImgUpload.prototype.bindEvent = function (container, dictionary) {
             StorageClass: 'STANDARD',
             Body: newFile,       // 上传文件对象
         }, function(err, data) {
-            imgUrlArr.push(data.Location.substring(56));
+            imgUrlArr.push(data.Location.substring(57));
             idx++;
             //递归调用
             if(idx <= len - 1){
@@ -1042,7 +1050,7 @@ Other_ImgUpload.prototype.init = function (container, dictionary) {
         '</li>'
     ].join("");
     var liStr = '',
-        qcloadUrl = 'http://testimg-1253887111.file.myqcloud.com/';
+        qcloadUrl = 'https://testimg-1253887111.file.myqcloud.com/';
     if(dictionary.img_url_list && dictionary.img_url_list[0] != null && dictionary.img_url_list[0] != ""){
         dictionary.img_url_list.forEach(function (value, index, array) {
             liStr += '<li><img src="'+ qcloadUrl +''+ value +'"></li>';
@@ -1111,7 +1119,7 @@ Other_ImgUpload.prototype.bindEvent = function (container, dictionary) {
             StorageClass: 'STANDARD',
             Body: newFile,       // 上传文件对象
         }, function(err, data) {
-            imgUrlArr.push(data.Location.substring(56));
+            imgUrlArr.push(data.Location.substring(57));
             idx++;
             //递归调用
             if(idx <= len - 1){
@@ -1165,7 +1173,6 @@ Other_ImgUpload.prototype.bindEvent = function (container, dictionary) {
                 }
             }
         })
-
     }
 }
 //重大事件 创建时间选择器表单,依赖bootstrap-datepicker库
@@ -1251,7 +1258,7 @@ EventSelectForm.prototype.init = function(container, dictionary) {
     var domStr = [
         '<li class="caseItemLi">',
         '   <p class="caseItemP">',
-        '		<span>事件类型</span>',
+        '		事件类型',
         '   </p>',
         // '   <form  class="caseItemForm">',
         '       <label>',

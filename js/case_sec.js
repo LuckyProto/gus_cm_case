@@ -1,4 +1,10 @@
 window.onload = function () {
+    // var json = require('stringify');
+
+    function jsonStringify(param) {
+        var result = JSON.stringify(param, null, 4);
+        return result;
+    }
     /*
     * pro使用if分支，dev使用else分支
     * */
@@ -7,7 +13,7 @@ window.onload = function () {
         window.emr_main_id = qs.split('&')[0].split('=')[1];
         window.typeId = qs.split('&')[1].split('=')[1];
     }else{
-        window.emr_main_id = 621;
+        window.emr_main_id = 582;
         window.typeId = 1;
     }
 
@@ -24,7 +30,21 @@ $.ajax({
         emrInfo     = data.data.emrInfo,
         treatment   = data.data.treatment,
         other       = data.data.other,
-        event       = data.data.event;
+        event       = data.data.event,
+        submit_reason = data.data.submit_reason,
+        emrBasicInfo = data.data.emrBasicInfo;
+    //基本信息
+    $('#avatar').attr('src', "http://testimg-1253887111.file.myqcloud.com/" + emrBasicInfo.avatar);
+    $('#record_num').val(emrBasicInfo.record_num);
+    $('#patient_name').val(emrBasicInfo.patient_name);
+    $('#sex').val(emrBasicInfo.sex);
+    $('#age').val(emrBasicInfo.age);
+    $('#mobile').val(emrBasicInfo.mobile);
+    $('#cli_date').val(emrBasicInfo.cli_date);
+    $('#cli_add').val(emrBasicInfo.cli_add);
+    $('#hospital_name').val(emrBasicInfo.hospital_name);
+    $('#doctor_name').val(emrBasicInfo.doctor_name);
+    $('#main_doctor_name').val(emrBasicInfo.main_doctor_name);
     //创建病例
     if(items){
         items.forEach(function (value, index, array) {
@@ -194,7 +214,7 @@ $.ajax({
         case typeId == 3:
             var $passBtn = $('<button>').text("通过");
             var $modifyBtn = $('<button id="confirmModifyBtn">').text("确认修改");
-            var $resion = $('<textarea placeholder="请输入未通过理由" id="resion">').val(data.data.resion);
+            var $resion = $('<textarea placeholder="请输入未通过理由" id="resion">').val(submit_reason);
             var $tel = $('<input type="text" placeholder="请输入手机号" id="tel">').val(data.data.mobile);
             var $notPassBtn = $('<button class="notPassBtn">').text("未通过");
             $passBtn.appendTo($("#statusBtn"));
@@ -229,11 +249,14 @@ $.ajax({
                 var mobile = $("#tel").val(),
                     beforeStr = "尊敬的用户，您提交的健康档案因",
                     afterStr = "审核未通过，请更改后重新提交。",
+                    originalReason = $("#resion").val(),
                     content = beforeStr + $("#resion").val() + afterStr;
                 if(confirm("是否告知患者病例未通过")){
                     $.ajax({
                         type: "POST",
-                        url: "http://pro.gusskids.cn/guservice/sendMobileMess",
+                        // url: "https://gppro.gusmedsci.cn/guservice/sendMobileMess",
+                        url: ajaxUrl + "sendMobileMess",
+                        // url: "http://pro.gusskids.cn/guservice/sendMobileMess",
                         contentType: "application/json;charset=UTF-8",
                         dataType: 'json',
                         data: JSON.stringify({
@@ -243,6 +266,8 @@ $.ajax({
                         success: function (data) {
                             if (data.code == 0) {
                                 alert('发送成功');
+                                //JSON序列化
+                                var unpassParam = jsonStringify({'emr_main_id': emr_main_id, 'originalReason': originalReason});
                                 $.ajax({
                                     type: "POST",
                                     url: ajaxUrl + "comm",
@@ -250,7 +275,7 @@ $.ajax({
                                     dataType: 'json',
                                     data: JSON.stringify({
                                         methodName: "sp_cm_emr_unpass",
-                                        param: JSON.stringify({"emr_main_id": emr_main_id})
+                                        param: unpassParam
                                     }),
                                     success: function (data) {
                                         if (data.code == 0) {
@@ -275,86 +300,62 @@ $.ajax({
             break;
     }
 
-    //模态框
-    $('#modal').on('show.bs.modal', function (e) {
-        // var $img_choose = $("<div id='demo' class='demo'></div>");
-        // $("#modal-body").append($img_choose).css({'height': 'auto'});
-        // $("#demo").zyUpload({
-        //     width: "auto",                 // 宽度
-        //     height: "400px",                 // 宽度
-        //     itemWidth: "100px",                 // 文件项的宽度
-        //     itemHeight: "80px",                 // 文件项的高度
-        //     url: "fileUploadAction!execute",  // 上传文件的路径
-        //     multiple: true,                    // 是否可以多个文件上传
-        //     dragDrop: true,                    // 是否可以拖动上传文件
-        //     del: true,                    // 是否可以删除文件
-        //     finishDel: false			  // 是否在上传文件完成后删除预览
-        // });
-    })
+    // var $uploadBtn = $('#uploadBtn');
+    // $uploadBtn.click(function (e) {
+    //     var cos = new COS({
+    //         SecretId: 'AKIDkqpiYCQu0Qgx2wrJjxzorpcCb9aqpmW5',
+    //         SecretKey: 'kJgqnZDg9YpvtgSEoDQSJzUow0eCoETk',
+    //     })
+    //     var fileInput = document.getElementById('fileInput'),
+    //         files = fileInput.files,
+    //         filesLen = files.length;
+    //     var imgArr = [];
+    //     if(files){
+    //         for(var i = 0; i < filesLen; i++ ) {
+    //             cos.putObject({
+    //                 Bucket: 'testimg-1253887111',
+    //                 Region: 'ap-beijing-1',
+    //                 Key: files[i].name,
+    //                 StorageClass: 'STANDARD',
+    //                 Body: files[i], // 上传文件对象
+    //             }, function(err, data) {
+    //                 imgArr.push(data.Location.substring(56));
+    //             });
+    //         }
+    //
+    //         setTimeout(function () {
+    //             var imgStr = imgArr.join();
+    //             var filesObj = {
+    //                 "emr_main_id": emr_main_id,
+    //                 "items" : [
+    //                     {
+    //                         itemId: window.itemId_btn_imgUpload,
+    //                         itemValue: imgStr
+    //                     }
+    //                 ]
+    //             }
+    //
+    //             $.ajax({
+    //                 type: "POST",
+    //                 url: ajaxUrl + "comm",
+    //                 contentType: "application/json;charset=UTF-8",
+    //                 dataType: 'json',
+    //                 data: JSON.stringify({
+    //                     methodName: "sp_cm_emr_value_update",
+    //                     param: JSON.stringify(filesObj)
+    //                 }),
+    //                 success: function (data) {
+    //                     if (data.code == 0) {
+    //                         alert('修改成功');
+    //                         fileInput.value = null;
+    //                         console.log(fileInput.files)
+    //                     }
+    //                 }
+    //             })
+    //         }, 5000)
+    //     }
+    // })
 
-    var $uploadBtn = $('#uploadBtn');
-    $uploadBtn.click(function (e) {
-        var cos = new COS({
-            SecretId: 'AKIDkqpiYCQu0Qgx2wrJjxzorpcCb9aqpmW5',
-            SecretKey: 'kJgqnZDg9YpvtgSEoDQSJzUow0eCoETk',
-        })
-        var fileInput = document.getElementById('fileInput'),
-            files = fileInput.files,
-            filesLen = files.length;
-        var imgArr = [];
-        if(files){
-            for(var i = 0; i < filesLen; i++ ) {
-                console.log(files[i])
-                cos.putObject({
-                    Bucket: 'testimg-1253887111',
-                    Region: 'ap-beijing-1',
-                    Key: files[i].name,
-                    StorageClass: 'STANDARD',
-                    Body: files[i], // 上传文件对象
-                }, function(err, data) {
-                    console.log(data)
-                    imgArr.push(data.Location.substring(56));
-                });
-            }
-
-            setTimeout(function () {
-                var imgStr = imgArr.join();
-                var filesObj = {
-                    "emr_main_id": emr_main_id,
-                    "items" : [
-                        {
-                            itemId: window.itemId_btn_imgUpload,
-                            itemValue: imgStr
-                        }
-                    ]
-                }
-
-                $.ajax({
-                    type: "POST",
-                    url: ajaxUrl + "comm",
-                    contentType: "application/json;charset=UTF-8",
-                    dataType: 'json',
-                    data: JSON.stringify({
-                        methodName: "sp_cm_emr_value_update",
-                        param: JSON.stringify(filesObj)
-                    }),
-                    success: function (data) {
-                        if (data.code == 0) {
-                            alert('修改成功');
-                            fileInput.value = null;
-                            console.log(fileInput.files)
-                        }
-                    }
-                })
-            }, 5000)
-        }
-
-    })
-
-    $('#modal').on('hidden.bs.modal', function (e) {
-        var fileInput = document.getElementById('fileInput');
-            fileInput.value = null;
-    })
 
     $('#confirmModifyBtn').click(function () {
         if (confirm('是否确认修改?')) {
@@ -368,18 +369,6 @@ $.ajax({
                 }
             }
             var caseObj = {};
-            //获取本地存储中的数据
-            var storage = window.localStorage;
-            // for (var i = storage.length - 1; i >= 0; i--) {
-            //     var imgObj = {};
-            //     var key = storage.key(i),
-            //         valueStr = storage.getItem(key);
-            //     if (valueStr != "" && key < 8888888880) {
-            //         imgObj.itemId = key;
-            //         imgObj.itemValue = valueStr;
-            //         cases.push(imgObj);
-            //     }
-            // }
 
             //过滤重复的item
             var re = unique(cases);
@@ -398,36 +387,36 @@ $.ajax({
             //其它
             if(other){
                 caseObj.other.emr_main_id = other.emr_main_id;
-                caseObj.other.img_url = other.img_url;
-                caseObj.other.emr_img_id = other.emr_img_id;
+                // caseObj.other.img_url = other.img_url;
+                // caseObj.other.emr_img_id = other.emr_img_id;
                 caseObj.other.other_content = $("#other_textarea").val();
-                caseObj.other.img_url_list = storage.getItem(other.itemId);
+                // caseObj.other.img_url_list = storage.getItem(other.itemId);
             }
 
             //建议诊疗方案
             if(treatment){
                 caseObj.treatment.emr_main_id = treatment.emr_main_id;
-                caseObj.treatment.img_url = treatment.img_url;
+                // caseObj.treatment.img_url = treatment.img_url;
                 var treatment_content = [];
                 $(".treatment_textarea").each(function (index) {
                     treatment_content.push($(this).val())
                 })
                 caseObj.treatment.treatment_content = treatment_content;
-                caseObj.treatment.img_url_list = storage.getItem(treatment.itemId);
+                // caseObj.treatment.img_url_list = storage.getItem(treatment.itemId);
             }
             //重大事件
             if(event){
                 event.forEach(function (value, index, array) {
                     caseObj.event[index] = {};
                     caseObj.event[index].emr_main_id = event[index].emr_main_id;
-                    caseObj.event[index].img_url = event[index].img_url;
-                    caseObj.event[index].emr_img_id = event[index].emr_img_id;
+                    // caseObj.event[index].img_url = event[index].img_url;
+                    // caseObj.event[index].emr_img_id = event[index].emr_img_id;
                     caseObj.event[index].emr_main_event_id = event[index].emr_main_event_id;
                     caseObj.event[index].event_date = $('#' + event[index].itemId).val();
                     caseObj.event[index].event_remark = $('.event_textarea').eq(index).val();
                     caseObj.event[index].level_1_selected_id = $('.levelOne_select').eq(index).val();
                     caseObj.event[index].level_2_selected_id = $('.levelTwo_select').eq(index).val();
-                    caseObj.event[index].img_url_list = storage.getItem(event[index].itemId) ? storage.getItem(event[index].itemId) : null;
+                    // caseObj.event[index].img_url_list = storage.getItem(event[index].itemId) ? storage.getItem(event[index].itemId) : null;
                 })
             }
 
@@ -444,7 +433,6 @@ $.ajax({
                 success: function (data) {
                     if (data.code == 0) {
                         alert('修改成功');
-                        sessionStorage.clear();
                     }
                 }
             })

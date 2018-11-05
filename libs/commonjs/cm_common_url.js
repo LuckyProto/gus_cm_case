@@ -1,3 +1,4 @@
-qcloadUrl = 'http://testimg-1253887111.file.myqcloud.com/';
+qcloadUrl = 'https://testimg-1253887111.file.myqcloud.com/';
 
-ajaxUrl = "http://gppro.gusskids.cn/guservice/";
+ajaxUrl = "https://gppro.gusskids.cn/guservice/";
+// ajaxUrl = "https://dev.gusskids.cn/guservice/";

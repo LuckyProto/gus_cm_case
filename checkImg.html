@@ -236,7 +236,8 @@
             //删除
             this.$btn.click(function () {
                 if(confirm('确定删除吗')){
-                    var delSrc = $(this).siblings().attr('src').substring('44');
+                    var delSrc = $(this).siblings().attr('src').substring('45');
+                    console.log("delSrc", delSrc)
                     methods.delQcload(delSrc, methods.editParam);
                     self.$dom.remove();
                 }
